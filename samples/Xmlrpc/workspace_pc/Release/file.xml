@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodResponse>
+<params>
+ <param>
+  <value>
+   <struct>
+    <member>
+     <name>platform</name>
+     <value>
+      <array>
+       <data>
+        <value>
+         <string>Windows Mobile Pocket PC</string>
+        </value>
+        <value>
+         <string>Windows Mobile Smartphone</string>
+        </value>
+        <value>
+         <string>iPhone</string>
+        </value>
+        <value>
+         <string>Symbian Series 60/S60</string>
+        </value>
+        <value>
+         <string>Symbian Series 80</string>
+        </value>
+        <value>
+         <string>Symbian Series 90</string>
+        </value>
+        <value>
+         <string>GP2X</string>
+        </value>
+        <value>
+         <string>Gizmondo</string>
+        </value>
+        <value>
+         <string>Windows desktop</string>
+        </value>
+       </data>
+      </array>
+     </value>
+    </member>
+   </struct>
+  </value>
+ </param>
+</params>
+</methodResponse>

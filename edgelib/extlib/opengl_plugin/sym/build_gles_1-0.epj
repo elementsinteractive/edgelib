@@ -1,0 +1,19 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "plugin1-0"
+caption      = "buildgl"
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "0.01.1"
+capabilities = "None"
+selplatform  = "Series 60 (3rd edition),UIQ (3.0)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\wrap_gles.cpp"
+
+# Project environment
+macrodef = "EGL_RASTEROID"

@@ -1,0 +1,37 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "xmlrpc"
+caption      = "xmlrpc"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+domain       = "nl.edgelib.samples.xmlrpc"
+target type  = "bin"
+appuid       = "0x00200000"
+version      = "1.00.0"
+capabilities = "None"
+fwdependencies = "None"
+selplatform  = "None"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\app.cpp"
+
+headerfile = "..\code\main.h"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico16.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+endpath = 0
+resourcepath = "Install"
+	resourcefile = "..\res\file.xml"
+endpath = 0
+
+# Project environment
+incpath = "."

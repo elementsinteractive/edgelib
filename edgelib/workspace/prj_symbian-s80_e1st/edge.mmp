@@ -1,0 +1,39 @@
+// Edge.mmp
+// Edge symbian lib build file
+// Copyright (c) 2006 Elements Interactive B.V.
+///////////////////////////////////////////////
+
+TARGET        edge.lib
+TARGETTYPE    lib
+TARGETPATH    \system\apps\edge
+
+MACRO         SERIES80
+MACRO         NODIRECTSCREENACCESS
+
+SOURCEPATH    ..\..\source\core
+SOURCE        cdisplay.cpp cevent.cpp cfile.cpp chelper.cpp cmemory.cpp cnet.cpp cthread.cpp ccamera.cpp
+SOURCEPATH    ..\..\source
+SOURCE        edgeframe.cpp emod_connect.cpp emod_console.cpp emod_device.cpp emod_dsp.cpp emod_file.cpp emod_ini.cpp emod_input.cpp emod_math.cpp emod_memory.cpp emod_raw.cpp emod_register.cpp emod_sound.cpp emod_std.cpp emod_vtimer.cpp emod_camera.cpp
+SOURCE        extapi_data.cpp extapi_xml.cpp
+SOURCEPATH    ..\..\source\loader
+SOURCE        eldr_base.cpp eldr_bmp.cpp eldr_gif.cpp eldr_png.cpp eldr_jpg.cpp eldr_tga.cpp eldr_3ds.cpp eldr_ms3d.cpp eldr_e3d.cpp eldr_dae.cpp eldr_pvr.cpp
+SOURCEPATH    ..\..\source\surface
+SOURCE        esurf_2dbase.cpp esurf_2d.cpp esurf_2drgba.cpp esurf_3d.cpp esurf_2ddisplay.cpp
+
+USERINCLUDE   ..\..\..\extsdk\zlib\include ..\..\source ..\..\include
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\libc
+LIBRARY       euser.lib
+LIBRARY       apparc.lib
+LIBRARY       cone.lib
+LIBRARY       eikcore.lib
+LIBRARY       eikcoctl.lib
+LIBRARY       ws32.lib    
+LIBRARY       efsrv.lib
+LIBRARY       etel.lib
+LIBRARY       apgrfx.lib
+LIBRARY       estlib.lib
+LIBRARY       plpvariant.lib
+LIBRARY       fbscli.lib
+LIBRARY       bitgdi.lib

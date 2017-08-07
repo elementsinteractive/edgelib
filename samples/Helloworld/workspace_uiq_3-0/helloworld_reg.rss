@@ -1,0 +1,14 @@
+#include <AppInfo.rh> 
+#include <helloworld.rsg> 
+  
+UID2 KUidAppRegistrationResourceFile 
+UID3 0xF0205D9E
+  
+RESOURCE APP_REGISTRATION_INFO 
+{ 
+    app_file = "helloworld"; 
+    localisable_resource_file = "\\resource\\apps\\helloworld"; 
+    localisable_resource_id = EXE_LOCALISABLE_APP_INFO; 
+    embeddability=KAppNotEmbeddable; 
+    newfile=KAppDoesNotSupportNewFile; 
+} 

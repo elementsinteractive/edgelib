@@ -1,0 +1,35 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "view3d"
+caption      = "View 3D"
+target type  = "bin"
+appuid       = "0x10205d9f"
+version      = "1.00.0"
+capabilities = "None"
+selplatform  = "WM Smartphone (2003)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\view3d.cpp"
+
+headerfile = "..\code\main.h"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 1
+
+# Project environment
+incpath = "."
+incpath = "..\..\..\..\rasteroid3.1\include"
+pluginlib = "opengl\plugin1-0.lib"
+staticlib = "..\..\..\..\rasteroid3.1\lib\wince\sp2003\device\libEGL.lib"
+staticlib = "..\..\..\..\rasteroid3.1\lib\wince\sp2003\device\libGLES_CM_NoE.lib"
+macrodef = "EGL_RASTEROID"

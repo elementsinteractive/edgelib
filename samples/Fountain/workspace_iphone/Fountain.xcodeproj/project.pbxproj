@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29A74C8C0EB09E3B00F39386 /* fountain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29A74C8A0EB09E3B00F39386 /* fountain.cpp */; };
+		29A74C8E0EB09E4700F39386 /* particle.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 29A74C8D0EB09E4700F39386 /* particle.bmp */; };
+		29A74D2E0EB09E8600F39386 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2B0EB09E8600F39386 /* libedge.a */; };
+		29A74D2F0EB09E8600F39386 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2C0EB09E8600F39386 /* libedgerender.a */; };
+		29A74D300EB09E8600F39386 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2D0EB09E8600F39386 /* libplugingl1-1.a */; };
+		29A74D350EB09E8A00F39386 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D320EB09E8A00F39386 /* libedge.a */; };
+		29A74D360EB09E8A00F39386 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D330EB09E8A00F39386 /* libedgerender.a */; };
+		29A74D370EB09E8A00F39386 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D340EB09E8A00F39386 /* libplugingl1-1.a */; };
+		29A74D520EB09E9100F39386 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4C0EB09E9100F39386 /* libz.dylib */; };
+		29A74D530EB09E9100F39386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4D0EB09E9100F39386 /* CoreGraphics.framework */; };
+		29A74D540EB09E9100F39386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4E0EB09E9100F39386 /* Foundation.framework */; };
+		29A74D550EB09E9100F39386 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4F0EB09E9100F39386 /* OpenGLES.framework */; };
+		29A74D560EB09E9100F39386 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D500EB09E9100F39386 /* QuartzCore.framework */; };
+		29A74D570EB09E9100F39386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D510EB09E9100F39386 /* UIKit.framework */; };
+		29A74D5C0EB09EDC00F39386 /* particle.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 29A74C8D0EB09E4700F39386 /* particle.bmp */; };
+		29A74D5E0EB09EDC00F39386 /* fountain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 29A74C8A0EB09E3B00F39386 /* fountain.cpp */; };
+		29A74D600EB09EDC00F39386 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2B0EB09E8600F39386 /* libedge.a */; };
+		29A74D610EB09EDC00F39386 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2C0EB09E8600F39386 /* libedgerender.a */; };
+		29A74D620EB09EDC00F39386 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D2D0EB09E8600F39386 /* libplugingl1-1.a */; };
+		29A74D630EB09EDC00F39386 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D320EB09E8A00F39386 /* libedge.a */; };
+		29A74D640EB09EDC00F39386 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D330EB09E8A00F39386 /* libedgerender.a */; };
+		29A74D650EB09EDC00F39386 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D340EB09E8A00F39386 /* libplugingl1-1.a */; };
+		29A74D660EB09EDC00F39386 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4C0EB09E9100F39386 /* libz.dylib */; };
+		29A74D670EB09EDC00F39386 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4D0EB09E9100F39386 /* CoreGraphics.framework */; };
+		29A74D680EB09EDC00F39386 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4E0EB09E9100F39386 /* Foundation.framework */; };
+		29A74D690EB09EDC00F39386 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D4F0EB09E9100F39386 /* OpenGLES.framework */; };
+		29A74D6A0EB09EDC00F39386 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D500EB09E9100F39386 /* QuartzCore.framework */; };
+		29A74D6B0EB09EDC00F39386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29A74D510EB09E9100F39386 /* UIKit.framework */; };
+		29A7505C0EB0B9A700F39386 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A7505B0EB0B9A700F39386 /* ico57.png */; };
+		29A7505D0EB0B9A700F39386 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A7505B0EB0B9A700F39386 /* ico57.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6058910D05DD3D006BFB54 /* Fountain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A74C8A0EB09E3B00F39386 /* fountain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fountain.cpp; path = ../code/fountain.cpp; sourceTree = SOURCE_ROOT; };
+		29A74C8B0EB09E3B00F39386 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = ../code/main.h; sourceTree = SOURCE_ROOT; };
+		29A74C8D0EB09E4700F39386 /* particle.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = particle.bmp; path = ../res/particle.bmp; sourceTree = SOURCE_ROOT; };
+		29A74D2B0EB09E8600F39386 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = "../../../lib/iphone-simulator/libedge.a"; sourceTree = SOURCE_ROOT; };
+		29A74D2C0EB09E8600F39386 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = "../../../lib/iphone-simulator/libedgerender.a"; sourceTree = SOURCE_ROOT; };
+		29A74D2D0EB09E8600F39386 /* libplugingl1-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplugingl1-1.a"; path = "../../../lib/iphone-simulator/opengl/libplugingl1-1.a"; sourceTree = SOURCE_ROOT; };
+		29A74D320EB09E8A00F39386 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = ../../../lib/iphone/libedge.a; sourceTree = SOURCE_ROOT; };
+		29A74D330EB09E8A00F39386 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = ../../../lib/iphone/libedgerender.a; sourceTree = SOURCE_ROOT; };
+		29A74D340EB09E8A00F39386 /* libplugingl1-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplugingl1-1.a"; path = "../../../lib/iphone/opengl/libplugingl1-1.a"; sourceTree = SOURCE_ROOT; };
+		29A74D4C0EB09E9100F39386 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		29A74D4D0EB09E9100F39386 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29A74D4E0EB09E9100F39386 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29A74D4F0EB09E9100F39386 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		29A74D500EB09E9100F39386 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		29A74D510EB09E9100F39386 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		29A74D6F0EB09EDC00F39386 /* Fountain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fountain.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A7505B0EB0B9A700F39386 /* ico57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico57.png; path = ../res/icons/ico57.png; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* Fountain_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fountain_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74D2E0EB09E8600F39386 /* libedge.a in Frameworks */,
+				29A74D2F0EB09E8600F39386 /* libedgerender.a in Frameworks */,
+				29A74D300EB09E8600F39386 /* libplugingl1-1.a in Frameworks */,
+				29A74D350EB09E8A00F39386 /* libedge.a in Frameworks */,
+				29A74D360EB09E8A00F39386 /* libedgerender.a in Frameworks */,
+				29A74D370EB09E8A00F39386 /* libplugingl1-1.a in Frameworks */,
+				29A74D520EB09E9100F39386 /* libz.dylib in Frameworks */,
+				29A74D530EB09E9100F39386 /* CoreGraphics.framework in Frameworks */,
+				29A74D540EB09E9100F39386 /* Foundation.framework in Frameworks */,
+				29A74D550EB09E9100F39386 /* OpenGLES.framework in Frameworks */,
+				29A74D560EB09E9100F39386 /* QuartzCore.framework in Frameworks */,
+				29A74D570EB09E9100F39386 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A74D5F0EB09EDC00F39386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74D600EB09EDC00F39386 /* libedge.a in Frameworks */,
+				29A74D610EB09EDC00F39386 /* libedgerender.a in Frameworks */,
+				29A74D620EB09EDC00F39386 /* libplugingl1-1.a in Frameworks */,
+				29A74D630EB09EDC00F39386 /* libedge.a in Frameworks */,
+				29A74D640EB09EDC00F39386 /* libedgerender.a in Frameworks */,
+				29A74D650EB09EDC00F39386 /* libplugingl1-1.a in Frameworks */,
+				29A74D660EB09EDC00F39386 /* libz.dylib in Frameworks */,
+				29A74D670EB09EDC00F39386 /* CoreGraphics.framework in Frameworks */,
+				29A74D680EB09EDC00F39386 /* Foundation.framework in Frameworks */,
+				29A74D690EB09EDC00F39386 /* OpenGLES.framework in Frameworks */,
+				29A74D6A0EB09EDC00F39386 /* QuartzCore.framework in Frameworks */,
+				29A74D6B0EB09EDC00F39386 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Fountain.app */,
+				29A74D6F0EB09EDC00F39386 /* Fountain.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29A74C890EB09E2200F39386 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				29A74C8A0EB09E3B00F39386 /* fountain.cpp */,
+				29A74C8B0EB09E3B00F39386 /* main.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		29A74D2A0EB09E8600F39386 /* simulator */ = {
+			isa = PBXGroup;
+			children = (
+				29A74D2B0EB09E8600F39386 /* libedge.a */,
+				29A74D2C0EB09E8600F39386 /* libedgerender.a */,
+				29A74D2D0EB09E8600F39386 /* libplugingl1-1.a */,
+			);
+			name = simulator;
+			sourceTree = "<group>";
+		};
+		29A74D310EB09E8A00F39386 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				29A74D320EB09E8A00F39386 /* libedge.a */,
+				29A74D330EB09E8A00F39386 /* libedgerender.a */,
+				29A74D340EB09E8A00F39386 /* libplugingl1-1.a */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				29A74C890EB09E2200F39386 /* Source */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Fountain_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29A7505B0EB0B9A700F39386 /* ico57.png */,
+				29A74C8D0EB09E4700F39386 /* particle.bmp */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29A74D4C0EB09E9100F39386 /* libz.dylib */,
+				29A74D4D0EB09E9100F39386 /* CoreGraphics.framework */,
+				29A74D4E0EB09E9100F39386 /* Foundation.framework */,
+				29A74D4F0EB09E9100F39386 /* OpenGLES.framework */,
+				29A74D500EB09E9100F39386 /* QuartzCore.framework */,
+				29A74D510EB09E9100F39386 /* UIKit.framework */,
+				29A74D310EB09E8A00F39386 /* device */,
+				29A74D2A0EB09E8600F39386 /* simulator */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Fountain device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fountain device" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fountain device";
+			productName = Fountain;
+			productReference = 1D6058910D05DD3D006BFB54 /* Fountain.app */;
+			productType = "com.apple.product-type.application";
+		};
+		29A74D5A0EB09EDC00F39386 /* Fountain simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29A74D6C0EB09EDC00F39386 /* Build configuration list for PBXNativeTarget "Fountain simulator" */;
+			buildPhases = (
+				29A74D5B0EB09EDC00F39386 /* Resources */,
+				29A74D5D0EB09EDC00F39386 /* Sources */,
+				29A74D5F0EB09EDC00F39386 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fountain simulator";
+			productName = Fountain;
+			productReference = 29A74D6F0EB09EDC00F39386 /* Fountain.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fountain" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Fountain device */,
+				29A74D5A0EB09EDC00F39386 /* Fountain simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74C8E0EB09E4700F39386 /* particle.bmp in Resources */,
+				29A7505C0EB0B9A700F39386 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A74D5B0EB09EDC00F39386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74D5C0EB09EDC00F39386 /* particle.bmp in Resources */,
+				29A7505D0EB0B9A700F39386 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74C8C0EB09E3B00F39386 /* fountain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		29A74D5D0EB09EDC00F39386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A74D5E0EB09EDC00F39386 /* fountain.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fountain_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = Fountain;
+				PROVISIONING_PROFILE = "AF5E9B01-BA08-4D4C-A5FD-87C4A6B0AEA4";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fountain_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = Fountain;
+				PROVISIONING_PROFILE = "AF5E9B01-BA08-4D4C-A5FD-87C4A6B0AEA4";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+		29A74D6D0EB09EDC00F39386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fountain_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = Fountain;
+				PROVISIONING_PROFILE = DefaultProfileUuid;
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Debug;
+		};
+		29A74D6E0EB09EDC00F39386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fountain_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = Fountain;
+				PROVISIONING_PROFILE = DefaultProfileUuid;
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fountain device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29A74D6C0EB09EDC00F39386 /* Build configuration list for PBXNativeTarget "Fountain simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29A74D6D0EB09EDC00F39386 /* Debug */,
+				29A74D6E0EB09EDC00F39386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Fountain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

@@ -1,0 +1,50 @@
+[Version]
+Signature   = "$Windows NT$"
+Provider    = "Edge"
+CESignature = "$Windows CE$"
+
+
+[CEDevice]
+BuildMax    = 0xE0000000
+
+
+[CEStrings]
+AppName     = "Helloworld"
+InstallDir  = %CE1%\%AppName%
+
+
+[DefaultInstall]
+CopyFiles   = ExeFiles
+CEShortcuts = Startmenu
+
+
+[SourceDisksNames.ARMPPC]
+1 = ,"ExeFiles",,..\workspace_ppc\ARMRel
+[SourceDisksNames.ARMPPC2003]
+1 = ,"ExeFiles",,..\workspace_ppc2003\ARMV4Rel
+[SourceDisksNames.ARMPPC2005]
+1 = ,"ExeFiles",,"..\workspace_ppc2005\Windows Mobile 5.0 Pocket PC SDK (ARMV4I)\Release"
+[SourceDisksNames.ARMWSP]
+1 = ,"ExeFiles",,..\workspace_smartphone\ARMRel
+[SourceDisksNames.ARMWSP2003]
+1 = ,"ExeFiles",,..\workspace_smartphone2003\ARMV4Rel
+[SourceDisksNames.ARMWSP2005]
+1 = ,"ExeFiles",,"..\workspace_smartphone2005\Windows Mobile 5.0 Smartphone SDK (ARMV4I)\Release"
+
+
+[SourceDisksFiles]
+Helloworld.exe = 1
+
+
+[DestinationDirs]
+ExeFiles  = 0, %InstallDir%
+Startmenu = 0, %CE11%\Edge
+DefaultDestDir = 0, %InstallDir%
+
+
+[ExeFiles]
+"Helloworld.exe"
+
+
+[Startmenu]
+"Helloworld", 0, "Helloworld.exe"

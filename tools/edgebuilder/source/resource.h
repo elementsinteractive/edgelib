@@ -1,0 +1,122 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by resource.rc
+//
+#define IDMOVEDOWN                      3
+#define IDBROWSE                        3
+#define IDCAPABILITIES                  3
+#define IDCHANGE                        4
+#define IDDEPENDENCIES                  4
+#define IDADD                           5
+#define IDREMOVE                        6
+#define IDD_MAIN                        101
+#define IDR_MAINMENU                    102
+#define IDB_FOLDEROPEN                  103
+#define IDB_FOLDERCLOSE                 104
+#define IDI_MAIN                        104
+#define IDB_SOURCEFILE                  105
+#define IDR_POPUPMENU                   105
+#define IDB_HEADERFILE                  106
+#define IDB_PROJECT                     107
+#define IDB_FOLDERROOT                  108
+#define IDD_PROJECTPATHS                109
+#define IDB_RESOURCEROOT                109
+#define IDD_EDITPATH                    110
+#define IDB_RESFOLDERCLOSE              110
+#define IDD_PRJPROPERTIES               111
+#define IDB_RESFOLDEROPEN               111
+#define IDB_RESOURCEFILE                112
+#define IDD_CAPABILITIES                112
+#define IDD_OPTIONS                     113
+#define IDD_DEPENDENCIES                114
+#define IDC_FILES                       1000
+#define IDC_PLATFORM                    1001
+#define IDC_BUILDOUTPUT                 1002
+#define IDC_PATHLIST                    1003
+#define IDC_TARGETTYPE                  1003
+#define IDMOVEUP                        1004
+#define IDC_PATHTYPE                    1005
+#define IDC_PATHEDIT                    1006
+#define IDC_PRJNAME                     1007
+#define IDC_PRJUID                      1008
+#define IDC_NORESEMU                    1009
+#define IDC_PRJCAPTION                  1010
+#define IDC_VERMAJOR                    1011
+#define IDC_CAPB1                       1012
+#define IDC_VERMINOR                    1012
+#define IDC_CAPB2                       1013
+#define IDC_BUILDNR                     1013
+#define IDC_CAPB3                       1014
+#define IDC_SELECTPLATFORM              1014
+#define IDC_EDGEPATH                    1015
+#define IDC_PRJVENDOR                   1015
+#define IDC_CAPA8                       1015
+#define IDC_VENDOR                      1016
+#define IDC_PRJVENDORSHORT              1016
+#define IDC_CAPB4                       1016
+#define IDC_CAPB6                       1017
+#define IDC_VENDORSHORT                 1017
+#define IDC_CAPB5                       1017
+#define IDC_CAPA1                       1018
+#define IDC_TMPFILE                     1018
+#define IDC_CAPA2                       1019
+#define IDC_BUILDBATCH                  1019
+#define IDC_CAPA3                       1020
+#define IDC_DEPSTD1                     1020
+#define IDC_CAPA4                       1021
+#define IDC_DEPSTD2                     1021
+#define IDC_CAPA5                       1022
+#define IDC_DEPSTD3                     1022
+#define IDC_CAPA6                       1023
+#define IDC_DEP1                        1023
+#define IDC_CAPA7                       1024
+#define IDC_DEP2                        1024
+#define IDC_CAPM1                       1025
+#define IDC_DEP3                        1025
+#define IDC_EDIT1                       1025
+#define IDC_PRJDOMAIN                   1025
+#define IDC_CAPM2                       1026
+#define IDC_CHECK1                      1026
+#define IDC_CUSTOMPATH                  1026
+#define IDC_CAPM3                       1027
+#define IDC_PATHOVERRIDE                1027
+#define IDC_CAPM4                       1028
+#define IDC_CAPM5                       1029
+#define IDC_CAPM6                       1030
+#define IDC_CAPM7                       1031
+#define ID_FILE_OPENPROJECT             40002
+#define ID_FILE_CLOSEPROJECT            40003
+#define ID_BUILD_COMPILE                40005
+#define ID_BUILD_BUILD                  40006
+#define ID_BUILD_REBUILDALL             40007
+#define ID_TREEFOLDER_ADDFILES          40008
+#define ID_BUILD_EXECUTE                40009
+#define ID_FILE_SAVEPROJECT             40012
+#define ID_FILE_NEWPROJECT              40014
+#define ID_FILE_EXITPROGRAM             40015
+#define ID_TREEFOLDERROOT_ADDFILES      40016
+#define ID_TREEFILE_REMOVE              40017
+#define ID_TREEFOLDER_REMOVE            40019
+#define ID_PROJECT_PATHS                40020
+#define ID_TREEFOLDER_NEWFOLDER         40021
+#define ID_TREEFOLDERROOT_NEWFOLDER     40022
+#define ID_HELP_ABOUT                   40023
+#define ID_FILE_REVERTPROJECT           40024
+#define ID_PROJECT_PROPERTIES           40025
+#define ID_HELP_WEBSITE                 40028
+#define ID_ICONFOLDER_ADDICONS          40029
+#define ID_BUILD_BUILDSETUP             40030
+#define ID_BUILD_LINK                   40031
+#define ID_TOOLS_OPTIONS                40032
+#define ID_BUILD_STOPBUILD              40033
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        114
+#define _APS_NEXT_COMMAND_VALUE         40034
+#define _APS_NEXT_CONTROL_VALUE         1028
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

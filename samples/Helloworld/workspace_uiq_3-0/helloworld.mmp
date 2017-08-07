@@ -1,0 +1,64 @@
+TARGET        helloworld.exe
+TARGETTYPE    exe
+UID           0x100039CE 0xF0205D9E
+
+MACRO         SYMBIANUIQ
+MACRO         APP_UID=0xF0205D9E
+
+EPOCSTACKSIZE 0x4000
+
+START RESOURCE helloworld.rss 
+HEADER 
+TARGETPATH    \resource\apps 
+END 
+  
+START RESOURCE helloworld_reg.rss 
+#ifdef WINSCW 
+TARGETPATH    \private\10003a3f\apps 
+#else 
+TARGETPATH    \private\10003a3f\import\apps 
+#endif 
+END 
+
+SOURCEPATH    .
+SOURCE        ..\code\helloworld.cpp
+
+USERINCLUDE   .
+USERINCLUDE   ..\code
+USERINCLUDE   ..\..\..\include
+
+STATICLIBRARY edge.lib
+STATICLIBRARY edgerender.lib
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\libc
+
+LIBRARY       euser.lib
+LIBRARY       apparc.lib
+LIBRARY       cone.lib
+LIBRARY       eikcore.lib
+LIBRARY       eikcoctl.lib
+LIBRARY       qikcore.lib
+LIBRARY       ws32.lib    
+LIBRARY       efsrv.lib
+LIBRARY       etel.lib
+LIBRARY       apgrfx.lib
+LIBRARY       estlib.lib
+LIBRARY       etel3rdparty.lib
+LIBRARY       fbscli.lib
+LIBRARY       bitgdi.lib
+LIBRARY	      esock.lib
+LIBRARY	      insock.lib
+LIBRARY	      bluetooth.lib
+LIBRARY       btextnotifiers.lib
+LIBRARY       btmanclient.lib
+LIBRARY       sdpagent.lib
+LIBRARY       sdpdatabase.lib
+LIBRARY       hal.lib
+LIBRARY       quiconfigclient.lib
+LIBRARY       ezlib.lib
+
+LANG SC
+
+VENDORID	  0
+CAPABILITY	  NONE

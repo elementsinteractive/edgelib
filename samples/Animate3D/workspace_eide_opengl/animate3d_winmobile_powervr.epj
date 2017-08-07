@@ -1,0 +1,33 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "animate3d"
+caption      = "Animate 3D"
+target type  = "bin"
+appuid       = "0x10205da3"
+version      = "1.00.0"
+capabilities = "None"
+selplatform  = "WM Pocket PC (2005)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\animate3d.cpp"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 1
+
+# Project environment
+incpath = "."
+incpath = "..\..\..\..\powervr\Builds\OGLES\Include"
+incpath = "..\..\..\..\powervr\Builds\OGLES\WindowsCE5ARMV4I\Include"
+pluginlib = "opengl\plugin1-0.lib"
+staticlib = "..\..\..\..\powervr\Builds\OGLES\WindowsCE5ARMV4I\Lib\libGLES_CL.lib"
+macrodef = "EGL_POWERVR"

@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03E3B18511526B70006AA419 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E3B18411526B70006AA419 /* libedgerender.a */; };
+		03E3B1D711526DAB006AA419 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E3B1D611526DAB006AA419 /* libedgerender.a */; };
+		047B8296110492E3004CA5B3 /* eldr_pvr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047B8295110492E3004CA5B3 /* eldr_pvr.cpp */; };
+		047B8297110492E3004CA5B3 /* eldr_pvr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047B8295110492E3004CA5B3 /* eldr_pvr.cpp */; };
+		047B829911049328004CA5B3 /* cthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047B829811049328004CA5B3 /* cthread.cpp */; };
+		047B829A11049328004CA5B3 /* cthread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 047B829811049328004CA5B3 /* cthread.cpp */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		1F8585AB12DDB17E00E586FF /* esurf_2ddisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA46F0212B8F25500479073 /* esurf_2ddisplay.cpp */; };
+		1F95661F12DDCE4800C362E1 /* broken.dat in Resources */ = {isa = PBXBuildFile; fileRef = 1F95661E12DDCE4800C362E1 /* broken.dat */; };
+		1FA46F0112B8F23B00479073 /* emod_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA46F0012B8F23B00479073 /* emod_camera.cpp */; };
+		1FA46F0D12B8F33C00479073 /* ccamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA46F0C12B8F33C00479073 /* ccamera.cpp */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		293F04CF0F45C54700338747 /* appleframe.mm in Sources */ = {isa = PBXBuildFile; fileRef = 293F04CC0F45C54700338747 /* appleframe.mm */; };
+		293F05000F45C6F600338747 /* cnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FA0F45C6F600338747 /* cnet.cpp */; };
+		293F05010F45C6F600338747 /* cmemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FB0F45C6F600338747 /* cmemory.cpp */; };
+		293F05020F45C6F600338747 /* cfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FC0F45C6F600338747 /* cfile.cpp */; };
+		293F05030F45C6F600338747 /* cevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FD0F45C6F600338747 /* cevent.cpp */; };
+		293F05040F45C6F600338747 /* cdisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FE0F45C6F600338747 /* cdisplay.cpp */; };
+		293F05050F45C6F600338747 /* chelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FF0F45C6F600338747 /* chelper.cpp */; };
+		293F05160F45C71D00338747 /* edgeframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05060F45C71D00338747 /* edgeframe.cpp */; };
+		293F05170F45C71D00338747 /* emod_connect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05070F45C71D00338747 /* emod_connect.cpp */; };
+		293F05180F45C71D00338747 /* emod_console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05080F45C71D00338747 /* emod_console.cpp */; };
+		293F05190F45C71D00338747 /* emod_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05090F45C71D00338747 /* emod_device.cpp */; };
+		293F051A0F45C71D00338747 /* emod_dsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050A0F45C71D00338747 /* emod_dsp.cpp */; };
+		293F051B0F45C71D00338747 /* emod_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050B0F45C71D00338747 /* emod_file.cpp */; };
+		293F051C0F45C71D00338747 /* emod_ini.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050C0F45C71D00338747 /* emod_ini.cpp */; };
+		293F051D0F45C71D00338747 /* emod_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050D0F45C71D00338747 /* emod_math.cpp */; };
+		293F051E0F45C71D00338747 /* emod_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050E0F45C71D00338747 /* emod_memory.cpp */; };
+		293F051F0F45C71D00338747 /* emod_raw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050F0F45C71D00338747 /* emod_raw.cpp */; };
+		293F05200F45C71D00338747 /* emod_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05100F45C71D00338747 /* emod_register.cpp */; };
+		293F05210F45C71D00338747 /* emod_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05110F45C71D00338747 /* emod_sound.cpp */; };
+		293F05220F45C71D00338747 /* emod_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05120F45C71D00338747 /* emod_std.cpp */; };
+		293F05240F45C71D00338747 /* emod_vtimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05140F45C71D00338747 /* emod_vtimer.cpp */; };
+		293F05250F45C71D00338747 /* emod_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05150F45C71D00338747 /* emod_input.cpp */; };
+		293F05290F45C74400338747 /* extapi_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05260F45C74400338747 /* extapi_data.cpp */; };
+		293F052A0F45C74400338747 /* extapi_xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05270F45C74400338747 /* extapi_xml.cpp */; };
+		293F05360F45C76200338747 /* eldr_tga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052C0F45C76200338747 /* eldr_tga.cpp */; };
+		293F05370F45C76200338747 /* eldr_ms3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052D0F45C76200338747 /* eldr_ms3d.cpp */; };
+		293F05380F45C76200338747 /* eldr_png.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052E0F45C76200338747 /* eldr_png.cpp */; };
+		293F05390F45C76200338747 /* eldr_jpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052F0F45C76200338747 /* eldr_jpg.cpp */; };
+		293F053A0F45C76200338747 /* eldr_gif.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05300F45C76200338747 /* eldr_gif.cpp */; };
+		293F053B0F45C76200338747 /* eldr_dae.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05310F45C76200338747 /* eldr_dae.cpp */; };
+		293F053C0F45C76200338747 /* eldr_bmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05320F45C76200338747 /* eldr_bmp.cpp */; };
+		293F053D0F45C76200338747 /* eldr_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05330F45C76200338747 /* eldr_base.cpp */; };
+		293F053E0F45C76200338747 /* eldr_3ds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05340F45C76200338747 /* eldr_3ds.cpp */; };
+		293F053F0F45C76200338747 /* eldr_e3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05350F45C76200338747 /* eldr_e3d.cpp */; };
+		293F054A0F45C77000338747 /* esurf_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05460F45C77000338747 /* esurf_3d.cpp */; };
+		293F054B0F45C77000338747 /* esurf_2drgba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05470F45C77000338747 /* esurf_2drgba.cpp */; };
+		293F054C0F45C77000338747 /* esurf_2dbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05480F45C77000338747 /* esurf_2dbase.cpp */; };
+		293F054D0F45C77000338747 /* esurf_2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05490F45C77000338747 /* esurf_2d.cpp */; };
+		293F054F0F45C78F00338747 /* cmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F054E0F45C78F00338747 /* cmain.cpp */; };
+		293F05680F45C8FE00338747 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05650F45C8FE00338747 /* AudioToolbox.framework */; };
+		293F05690F45C8FE00338747 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05660F45C8FE00338747 /* OpenGLES.framework */; };
+		293F056A0F45C8FE00338747 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05670F45C8FE00338747 /* QuartzCore.framework */; };
+		293F05770F45C92900338747 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05760F45C92900338747 /* libz.dylib */; };
+		293F059C0F45CB8E00338747 /* appleframe.mm in Sources */ = {isa = PBXBuildFile; fileRef = 293F04CC0F45C54700338747 /* appleframe.mm */; };
+		293F059D0F45CB8E00338747 /* cnet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FA0F45C6F600338747 /* cnet.cpp */; };
+		293F059E0F45CB8E00338747 /* cmemory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FB0F45C6F600338747 /* cmemory.cpp */; };
+		293F059F0F45CB8E00338747 /* cfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FC0F45C6F600338747 /* cfile.cpp */; };
+		293F05A00F45CB8E00338747 /* cevent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FD0F45C6F600338747 /* cevent.cpp */; };
+		293F05A10F45CB8E00338747 /* cdisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FE0F45C6F600338747 /* cdisplay.cpp */; };
+		293F05A20F45CB8E00338747 /* chelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F04FF0F45C6F600338747 /* chelper.cpp */; };
+		293F05A30F45CB8E00338747 /* edgeframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05060F45C71D00338747 /* edgeframe.cpp */; };
+		293F05A40F45CB8E00338747 /* emod_connect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05070F45C71D00338747 /* emod_connect.cpp */; };
+		293F05A50F45CB8E00338747 /* emod_console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05080F45C71D00338747 /* emod_console.cpp */; };
+		293F05A60F45CB8E00338747 /* emod_device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05090F45C71D00338747 /* emod_device.cpp */; };
+		293F05A70F45CB8E00338747 /* emod_dsp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050A0F45C71D00338747 /* emod_dsp.cpp */; };
+		293F05A80F45CB8E00338747 /* emod_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050B0F45C71D00338747 /* emod_file.cpp */; };
+		293F05A90F45CB8E00338747 /* emod_ini.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050C0F45C71D00338747 /* emod_ini.cpp */; };
+		293F05AA0F45CB8E00338747 /* emod_math.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050D0F45C71D00338747 /* emod_math.cpp */; };
+		293F05AB0F45CB8E00338747 /* emod_memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050E0F45C71D00338747 /* emod_memory.cpp */; };
+		293F05AC0F45CB8E00338747 /* emod_raw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F050F0F45C71D00338747 /* emod_raw.cpp */; };
+		293F05AD0F45CB8E00338747 /* emod_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05100F45C71D00338747 /* emod_register.cpp */; };
+		293F05AE0F45CB8E00338747 /* emod_sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05110F45C71D00338747 /* emod_sound.cpp */; };
+		293F05AF0F45CB8E00338747 /* emod_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05120F45C71D00338747 /* emod_std.cpp */; };
+		293F05B10F45CB8E00338747 /* emod_vtimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05140F45C71D00338747 /* emod_vtimer.cpp */; };
+		293F05B20F45CB8E00338747 /* emod_input.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05150F45C71D00338747 /* emod_input.cpp */; };
+		293F05B30F45CB8E00338747 /* extapi_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05260F45C74400338747 /* extapi_data.cpp */; };
+		293F05B40F45CB8E00338747 /* extapi_xml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05270F45C74400338747 /* extapi_xml.cpp */; };
+		293F05B60F45CB8E00338747 /* eldr_tga.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052C0F45C76200338747 /* eldr_tga.cpp */; };
+		293F05B70F45CB8E00338747 /* eldr_ms3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052D0F45C76200338747 /* eldr_ms3d.cpp */; };
+		293F05B80F45CB8E00338747 /* eldr_png.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052E0F45C76200338747 /* eldr_png.cpp */; };
+		293F05B90F45CB8E00338747 /* eldr_jpg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F052F0F45C76200338747 /* eldr_jpg.cpp */; };
+		293F05BA0F45CB8E00338747 /* eldr_gif.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05300F45C76200338747 /* eldr_gif.cpp */; };
+		293F05BB0F45CB8E00338747 /* eldr_dae.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05310F45C76200338747 /* eldr_dae.cpp */; };
+		293F05BC0F45CB8E00338747 /* eldr_bmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05320F45C76200338747 /* eldr_bmp.cpp */; };
+		293F05BD0F45CB8E00338747 /* eldr_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05330F45C76200338747 /* eldr_base.cpp */; };
+		293F05BE0F45CB8E00338747 /* eldr_3ds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05340F45C76200338747 /* eldr_3ds.cpp */; };
+		293F05BF0F45CB8E00338747 /* eldr_e3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05350F45C76200338747 /* eldr_e3d.cpp */; };
+		293F05C00F45CB8E00338747 /* esurf_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05460F45C77000338747 /* esurf_3d.cpp */; };
+		293F05C10F45CB8E00338747 /* esurf_2drgba.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05470F45C77000338747 /* esurf_2drgba.cpp */; };
+		293F05C20F45CB8E00338747 /* esurf_2dbase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05480F45C77000338747 /* esurf_2dbase.cpp */; };
+		293F05C30F45CB8E00338747 /* esurf_2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F05490F45C77000338747 /* esurf_2d.cpp */; };
+		293F05C40F45CB8E00338747 /* cmain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 293F054E0F45C78F00338747 /* cmain.cpp */; };
+		293F05C60F45CB8E00338747 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		293F05C70F45CB8E00338747 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		293F05C80F45CB8E00338747 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		293F05C90F45CB8E00338747 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05650F45C8FE00338747 /* AudioToolbox.framework */; };
+		293F05CA0F45CB8E00338747 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05660F45C8FE00338747 /* OpenGLES.framework */; };
+		293F05CB0F45CB8E00338747 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05670F45C8FE00338747 /* QuartzCore.framework */; };
+		293F05CC0F45CB8E00338747 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 293F05760F45C92900338747 /* libz.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		03E3B18411526B70006AA419 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libedgerender.a; sourceTree = "<group>"; };
+		03E3B1D611526DAB006AA419 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = ../../../devlib/workspace/prj_iphone/release/libedgerender.a; sourceTree = SOURCE_ROOT; };
+		047B8295110492E3004CA5B3 /* eldr_pvr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_pvr.cpp; path = ../../../devlib/source/loader/eldr_pvr.cpp; sourceTree = SOURCE_ROOT; };
+		047B829811049328004CA5B3 /* cthread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cthread.cpp; path = ../../../devlib/source/core/cthread.cpp; sourceTree = SOURCE_ROOT; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D6058910D05DD3D006BFB54 /* eventcore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventcore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F80E7F3123A4524004F3227 /* wrap_gles2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrap_gles2.h; path = ../../../devlib/extlib/opengl_plugin/wrap_gles2.h; sourceTree = SOURCE_ROOT; };
+		1F80E7F4123A4524004F3227 /* wrap_gles2mac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = wrap_gles2mac.mm; path = ../../../devlib/extlib/opengl_plugin/wrap_gles2mac.mm; sourceTree = SOURCE_ROOT; };
+		1F83BEB8121932240055A159 /* wrap_glesmac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = wrap_glesmac.mm; path = ../../../devlib/extlib/opengl_plugin/wrap_glesmac.mm; sourceTree = SOURCE_ROOT; };
+		1F95661E12DDCE4800C362E1 /* broken.dat */ = {isa = PBXFileReference; lastKnownFileType = file; name = broken.dat; path = ../../../broken.dat; sourceTree = SOURCE_ROOT; };
+		1FA46F0012B8F23B00479073 /* emod_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_camera.cpp; path = ../../../devlib/source/emod_camera.cpp; sourceTree = SOURCE_ROOT; };
+		1FA46F0212B8F25500479073 /* esurf_2ddisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = esurf_2ddisplay.cpp; path = ../../../devlib/source/surface/esurf_2ddisplay.cpp; sourceTree = SOURCE_ROOT; };
+		1FA46F0C12B8F33C00479073 /* ccamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ccamera.cpp; path = ../../../devlib/source/core/ccamera.cpp; sourceTree = SOURCE_ROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		293F04C10F45C53400338747 /* edgecore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgecore.h; path = ../../../devlib/source/core/edgecore.h; sourceTree = SOURCE_ROOT; };
+		293F04C20F45C54700338747 /* symbianframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbianframe.h; path = ../../../devlib/source/core/extapi/symbianframe.h; sourceTree = SOURCE_ROOT; };
+		293F04C30F45C54700338747 /* symbiandsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbiandsa.h; path = ../../../devlib/source/core/extapi/symbiandsa.h; sourceTree = SOURCE_ROOT; };
+		293F04C40F45C54700338747 /* symbianbtapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = symbianbtapi.h; path = ../../../devlib/source/core/extapi/symbianbtapi.h; sourceTree = SOURCE_ROOT; };
+		293F04C50F45C54700338747 /* parsesdp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = parsesdp.h; path = ../../../devlib/source/core/extapi/parsesdp.h; sourceTree = SOURCE_ROOT; };
+		293F04C60F45C54700338747 /* imp_symbiantilt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_symbiantilt.h; path = ../../../devlib/source/core/extapi/imp_symbiantilt.h; sourceTree = SOURCE_ROOT; };
+		293F04C70F45C54700338747 /* imp_powerapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_powerapi.h; path = ../../../devlib/source/core/extapi/imp_powerapi.h; sourceTree = SOURCE_ROOT; };
+		293F04C80F45C54700338747 /* imp_dspchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_dspchange.h; path = ../../../devlib/source/core/extapi/imp_dspchange.h; sourceTree = SOURCE_ROOT; };
+		293F04C90F45C54700338747 /* imp_ddraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_ddraw.h; path = ../../../devlib/source/core/extapi/imp_ddraw.h; sourceTree = SOURCE_ROOT; };
+		293F04CA0F45C54700338747 /* imp_bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_bluetooth.h; path = ../../../devlib/source/core/extapi/imp_bluetooth.h; sourceTree = SOURCE_ROOT; };
+		293F04CB0F45C54700338747 /* appleinstanceobj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appleinstanceobj.h; path = ../../../devlib/source/core/extapi/appleinstanceobj.h; sourceTree = SOURCE_ROOT; };
+		293F04CC0F45C54700338747 /* appleframe.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = appleframe.mm; path = ../../../devlib/source/core/extapi/appleframe.mm; sourceTree = SOURCE_ROOT; };
+		293F04CD0F45C54700338747 /* appleframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appleframe.h; path = ../../../devlib/source/core/extapi/appleframe.h; sourceTree = SOURCE_ROOT; };
+		293F04CE0F45C54700338747 /* imp_gx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = imp_gx.h; path = ../../../devlib/source/core/extapi/imp_gx.h; sourceTree = SOURCE_ROOT; };
+		293F04D00F45C57100338747 /* dataapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dataapi.h; path = ../../../devlib/include/extapi/dataapi.h; sourceTree = SOURCE_ROOT; };
+		293F04D10F45C57100338747 /* xmlapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmlapi.h; path = ../../../devlib/include/extapi/xmlapi.h; sourceTree = SOURCE_ROOT; };
+		293F04D20F45C57100338747 /* netapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = netapi.h; path = ../../../devlib/include/extapi/netapi.h; sourceTree = SOURCE_ROOT; };
+		293F04D30F45C5B900338747 /* econnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = econnect.h; path = ../../../devlib/include/econnect.h; sourceTree = SOURCE_ROOT; };
+		293F04D40F45C5B900338747 /* edevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edevice.h; path = ../../../devlib/include/edevice.h; sourceTree = SOURCE_ROOT; };
+		293F04D50F45C5B900338747 /* edgeframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgeframe.h; path = ../../../devlib/include/edgeframe.h; sourceTree = SOURCE_ROOT; };
+		293F04D60F45C5B900338747 /* edisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edisplay.h; path = ../../../devlib/include/edisplay.h; sourceTree = SOURCE_ROOT; };
+		293F04D70F45C5B900338747 /* efile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = efile.h; path = ../../../devlib/include/efile.h; sourceTree = SOURCE_ROOT; };
+		293F04D80F45C5B900338747 /* eini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eini.h; path = ../../../devlib/include/eini.h; sourceTree = SOURCE_ROOT; };
+		293F04D90F45C5B900338747 /* einput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = einput.h; path = ../../../devlib/include/einput.h; sourceTree = SOURCE_ROOT; };
+		293F04DA0F45C5B900338747 /* eloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eloader.h; path = ../../../devlib/include/eloader.h; sourceTree = SOURCE_ROOT; };
+		293F04DB0F45C5B900338747 /* emath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = emath.h; path = ../../../devlib/include/emath.h; sourceTree = SOURCE_ROOT; };
+		293F04DC0F45C5B900338747 /* ememory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ememory.h; path = ../../../devlib/include/ememory.h; sourceTree = SOURCE_ROOT; };
+		293F04DD0F45C5B900338747 /* eraw.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = eraw.h; path = ../../../devlib/include/eraw.h; sourceTree = SOURCE_ROOT; };
+		293F04DE0F45C5B900338747 /* ereg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ereg.h; path = ../../../devlib/include/ereg.h; sourceTree = SOURCE_ROOT; };
+		293F04DF0F45C5B900338747 /* esound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = esound.h; path = ../../../devlib/include/esound.h; sourceTree = SOURCE_ROOT; };
+		293F04E00F45C5B900338747 /* estdc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = estdc.h; path = ../../../devlib/include/estdc.h; sourceTree = SOURCE_ROOT; };
+		293F04E10F45C5B900338747 /* esurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = esurface.h; path = ../../../devlib/include/esurface.h; sourceTree = SOURCE_ROOT; };
+		293F04E30F45C5B900338747 /* evtimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = evtimer.h; path = ../../../devlib/include/evtimer.h; sourceTree = SOURCE_ROOT; };
+		293F04E40F45C5B900338747 /* econsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = econsole.h; path = ../../../devlib/include/econsole.h; sourceTree = SOURCE_ROOT; };
+		293F04E50F45C5ED00338747 /* verinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = verinfo.h; path = ../../../devlib/source/extra/verinfo.h; sourceTree = SOURCE_ROOT; };
+		293F04E60F45C5ED00338747 /* keynames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = keynames.h; path = ../../../devlib/source/extra/keynames.h; sourceTree = SOURCE_ROOT; };
+		293F04E70F45C5ED00338747 /* exrect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exrect.h; path = ../../../devlib/source/extra/exrect.h; sourceTree = SOURCE_ROOT; };
+		293F04E80F45C5ED00338747 /* exmacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exmacro.h; path = ../../../devlib/source/extra/exmacro.h; sourceTree = SOURCE_ROOT; };
+		293F04E90F45C5ED00338747 /* exblitfast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exblitfast.h; path = ../../../devlib/source/extra/exblitfast.h; sourceTree = SOURCE_ROOT; };
+		293F04EA0F45C5ED00338747 /* exblit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = exblit.h; path = ../../../devlib/source/extra/exblit.h; sourceTree = SOURCE_ROOT; };
+		293F04EB0F45C5ED00338747 /* excoll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = excoll.h; path = ../../../devlib/source/extra/excoll.h; sourceTree = SOURCE_ROOT; };
+		293F04EC0F45C60800338747 /* gldummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gldummy.h; path = ../../../devlib/include/extapi/gldummy.h; sourceTree = SOURCE_ROOT; };
+		293F04ED0F45C63800338747 /* wrap_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrap_gl.h; path = ../../../devlib/extlib/opengl_plugin/wrap_gl.h; sourceTree = SOURCE_ROOT; };
+		293F04EE0F45C63800338747 /* wrap_glesmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrap_glesmac.h; path = ../../../devlib/extlib/opengl_plugin/wrap_glesmac.h; sourceTree = SOURCE_ROOT; };
+		293F04EF0F45C63800338747 /* wrap_gles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wrap_gles.h; path = ../../../devlib/extlib/opengl_plugin/wrap_gles.h; sourceTree = SOURCE_ROOT; };
+		293F04F00F45C66600338747 /* silent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = silent.h; path = ../../../devlib/include/esound/silent.h; sourceTree = SOURCE_ROOT; };
+		293F04F10F45C66600338747 /* hekkus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hekkus.h; path = ../../../devlib/include/esound/hekkus.h; sourceTree = SOURCE_ROOT; };
+		293F04F20F45C66600338747 /* openal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = openal.h; path = ../../../devlib/include/esound/openal.h; sourceTree = SOURCE_ROOT; };
+		293F04F30F45C69F00338747 /* edge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edge.h; path = ../../../devlib/include/edge.h; sourceTree = SOURCE_ROOT; };
+		293F04F40F45C69F00338747 /* edgedevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgedevice.h; path = ../../../devlib/include/edgedevice.h; sourceTree = SOURCE_ROOT; };
+		293F04F50F45C69F00338747 /* edgemain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgemain.h; path = ../../../devlib/include/edgemain.h; sourceTree = SOURCE_ROOT; };
+		293F04F60F45C69F00338747 /* edgerender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgerender.h; path = ../../../devlib/include/edgerender.h; sourceTree = SOURCE_ROOT; };
+		293F04F70F45C69F00338747 /* edgesdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgesdkdef.h; path = ../../../devlib/include/edgesdkdef.h; sourceTree = SOURCE_ROOT; };
+		293F04F80F45C69F00338747 /* edgedef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = edgedef.h; path = ../../../devlib/include/edgedef.h; sourceTree = SOURCE_ROOT; };
+		293F04F90F45C6C700338747 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = "../prj_pc-x86/main.h"; sourceTree = SOURCE_ROOT; };
+		293F04FA0F45C6F600338747 /* cnet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cnet.cpp; path = ../../../devlib/source/core/cnet.cpp; sourceTree = SOURCE_ROOT; };
+		293F04FB0F45C6F600338747 /* cmemory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cmemory.cpp; path = ../../../devlib/source/core/cmemory.cpp; sourceTree = SOURCE_ROOT; };
+		293F04FC0F45C6F600338747 /* cfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cfile.cpp; path = ../../../devlib/source/core/cfile.cpp; sourceTree = SOURCE_ROOT; };
+		293F04FD0F45C6F600338747 /* cevent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cevent.cpp; path = ../../../devlib/source/core/cevent.cpp; sourceTree = SOURCE_ROOT; };
+		293F04FE0F45C6F600338747 /* cdisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cdisplay.cpp; path = ../../../devlib/source/core/cdisplay.cpp; sourceTree = SOURCE_ROOT; };
+		293F04FF0F45C6F600338747 /* chelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chelper.cpp; path = ../../../devlib/source/core/chelper.cpp; sourceTree = SOURCE_ROOT; };
+		293F05060F45C71D00338747 /* edgeframe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = edgeframe.cpp; path = ../../../devlib/source/edgeframe.cpp; sourceTree = SOURCE_ROOT; };
+		293F05070F45C71D00338747 /* emod_connect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_connect.cpp; path = ../../../devlib/source/emod_connect.cpp; sourceTree = SOURCE_ROOT; };
+		293F05080F45C71D00338747 /* emod_console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_console.cpp; path = ../../../devlib/source/emod_console.cpp; sourceTree = SOURCE_ROOT; };
+		293F05090F45C71D00338747 /* emod_device.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_device.cpp; path = ../../../devlib/source/emod_device.cpp; sourceTree = SOURCE_ROOT; };
+		293F050A0F45C71D00338747 /* emod_dsp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_dsp.cpp; path = ../../../devlib/source/emod_dsp.cpp; sourceTree = SOURCE_ROOT; };
+		293F050B0F45C71D00338747 /* emod_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_file.cpp; path = ../../../devlib/source/emod_file.cpp; sourceTree = SOURCE_ROOT; };
+		293F050C0F45C71D00338747 /* emod_ini.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_ini.cpp; path = ../../../devlib/source/emod_ini.cpp; sourceTree = SOURCE_ROOT; };
+		293F050D0F45C71D00338747 /* emod_math.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_math.cpp; path = ../../../devlib/source/emod_math.cpp; sourceTree = SOURCE_ROOT; };
+		293F050E0F45C71D00338747 /* emod_memory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_memory.cpp; path = ../../../devlib/source/emod_memory.cpp; sourceTree = SOURCE_ROOT; };
+		293F050F0F45C71D00338747 /* emod_raw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_raw.cpp; path = ../../../devlib/source/emod_raw.cpp; sourceTree = SOURCE_ROOT; };
+		293F05100F45C71D00338747 /* emod_register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_register.cpp; path = ../../../devlib/source/emod_register.cpp; sourceTree = SOURCE_ROOT; };
+		293F05110F45C71D00338747 /* emod_sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_sound.cpp; path = ../../../devlib/source/emod_sound.cpp; sourceTree = SOURCE_ROOT; };
+		293F05120F45C71D00338747 /* emod_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_std.cpp; path = ../../../devlib/source/emod_std.cpp; sourceTree = SOURCE_ROOT; };
+		293F05140F45C71D00338747 /* emod_vtimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_vtimer.cpp; path = ../../../devlib/source/emod_vtimer.cpp; sourceTree = SOURCE_ROOT; };
+		293F05150F45C71D00338747 /* emod_input.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = emod_input.cpp; path = ../../../devlib/source/emod_input.cpp; sourceTree = SOURCE_ROOT; };
+		293F05260F45C74400338747 /* extapi_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = extapi_data.cpp; path = ../../../devlib/source/extapi_data.cpp; sourceTree = SOURCE_ROOT; };
+		293F05270F45C74400338747 /* extapi_xml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = extapi_xml.cpp; path = ../../../devlib/source/extapi_xml.cpp; sourceTree = SOURCE_ROOT; };
+		293F052C0F45C76200338747 /* eldr_tga.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_tga.cpp; path = ../../../devlib/source/loader/eldr_tga.cpp; sourceTree = SOURCE_ROOT; };
+		293F052D0F45C76200338747 /* eldr_ms3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_ms3d.cpp; path = ../../../devlib/source/loader/eldr_ms3d.cpp; sourceTree = SOURCE_ROOT; };
+		293F052E0F45C76200338747 /* eldr_png.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_png.cpp; path = ../../../devlib/source/loader/eldr_png.cpp; sourceTree = SOURCE_ROOT; };
+		293F052F0F45C76200338747 /* eldr_jpg.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_jpg.cpp; path = ../../../devlib/source/loader/eldr_jpg.cpp; sourceTree = SOURCE_ROOT; };
+		293F05300F45C76200338747 /* eldr_gif.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_gif.cpp; path = ../../../devlib/source/loader/eldr_gif.cpp; sourceTree = SOURCE_ROOT; };
+		293F05310F45C76200338747 /* eldr_dae.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_dae.cpp; path = ../../../devlib/source/loader/eldr_dae.cpp; sourceTree = SOURCE_ROOT; };
+		293F05320F45C76200338747 /* eldr_bmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_bmp.cpp; path = ../../../devlib/source/loader/eldr_bmp.cpp; sourceTree = SOURCE_ROOT; };
+		293F05330F45C76200338747 /* eldr_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_base.cpp; path = ../../../devlib/source/loader/eldr_base.cpp; sourceTree = SOURCE_ROOT; };
+		293F05340F45C76200338747 /* eldr_3ds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_3ds.cpp; path = ../../../devlib/source/loader/eldr_3ds.cpp; sourceTree = SOURCE_ROOT; };
+		293F05350F45C76200338747 /* eldr_e3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = eldr_e3d.cpp; path = ../../../devlib/source/loader/eldr_e3d.cpp; sourceTree = SOURCE_ROOT; };
+		293F05460F45C77000338747 /* esurf_3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = esurf_3d.cpp; path = ../../../devlib/source/surface/esurf_3d.cpp; sourceTree = SOURCE_ROOT; };
+		293F05470F45C77000338747 /* esurf_2drgba.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = esurf_2drgba.cpp; path = ../../../devlib/source/surface/esurf_2drgba.cpp; sourceTree = SOURCE_ROOT; };
+		293F05480F45C77000338747 /* esurf_2dbase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = esurf_2dbase.cpp; path = ../../../devlib/source/surface/esurf_2dbase.cpp; sourceTree = SOURCE_ROOT; };
+		293F05490F45C77000338747 /* esurf_2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = esurf_2d.cpp; path = ../../../devlib/source/surface/esurf_2d.cpp; sourceTree = SOURCE_ROOT; };
+		293F054E0F45C78F00338747 /* cmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = cmain.cpp; path = "../prj_pc-x86/cmain.cpp"; sourceTree = SOURCE_ROOT; };
+		293F05650F45C8FE00338747 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		293F05660F45C8FE00338747 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		293F05670F45C8FE00338747 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		293F05760F45C92900338747 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		293F05D10F45CB8E00338747 /* eventcore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eventcore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32CA4F630368D1EE00C91783 /* eventcore_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eventcore_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				293F05680F45C8FE00338747 /* AudioToolbox.framework in Frameworks */,
+				293F05690F45C8FE00338747 /* OpenGLES.framework in Frameworks */,
+				293F056A0F45C8FE00338747 /* QuartzCore.framework in Frameworks */,
+				293F05770F45C92900338747 /* libz.dylib in Frameworks */,
+				03E3B18511526B70006AA419 /* libedgerender.a in Frameworks */,
+				03E3B1D711526DAB006AA419 /* libedgerender.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293F05C50F45CB8E00338747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F05C60F45CB8E00338747 /* Foundation.framework in Frameworks */,
+				293F05C70F45CB8E00338747 /* UIKit.framework in Frameworks */,
+				293F05C80F45CB8E00338747 /* CoreGraphics.framework in Frameworks */,
+				293F05C90F45CB8E00338747 /* AudioToolbox.framework in Frameworks */,
+				293F05CA0F45CB8E00338747 /* OpenGLES.framework in Frameworks */,
+				293F05CB0F45CB8E00338747 /* QuartzCore.framework in Frameworks */,
+				293F05CC0F45CB8E00338747 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				293F049A0F45C2E200338747 /* Header Files */,
+				293F04990F45C2DA00338747 /* Source Files */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* eventcore.app */,
+				293F05D10F45CB8E00338747 /* eventcore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FF66BB21202D01C005CDF1F /* Resources-iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Resources-iPad";
+			sourceTree = "<group>";
+		};
+		293F04990F45C2DA00338747 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				293F04A90F45C43100338747 /* edgecore c */,
+				293F04A70F45C41B00338747 /* edgelib c */,
+				293F04A60F45C41000338747 /* loader c */,
+				293F04A50F45C40400338747 /* surface c */,
+				293F054E0F45C78F00338747 /* cmain.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		293F049A0F45C2E200338747 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				293F049B0F45C30800338747 /* edgecore h */,
+				293F049F0F45C35000338747 /* extapi_imp */,
+				293F04A00F45C36B00338747 /* edgelib h */,
+				293F04A20F45C39000338747 /* extra */,
+				293F04A30F45C3C700338747 /* glplugin */,
+				293F04A40F45C3E700338747 /* esound */,
+				293F04F30F45C69F00338747 /* edge.h */,
+				293F04F40F45C69F00338747 /* edgedevice.h */,
+				293F04F50F45C69F00338747 /* edgemain.h */,
+				293F04F60F45C69F00338747 /* edgerender.h */,
+				293F04F70F45C69F00338747 /* edgesdkdef.h */,
+				293F04F80F45C69F00338747 /* edgedef.h */,
+				293F04F90F45C6C700338747 /* main.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		293F049B0F45C30800338747 /* edgecore h */ = {
+			isa = PBXGroup;
+			children = (
+				293F04C10F45C53400338747 /* edgecore.h */,
+			);
+			name = "edgecore h";
+			sourceTree = "<group>";
+		};
+		293F049F0F45C35000338747 /* extapi_imp */ = {
+			isa = PBXGroup;
+			children = (
+				1F83BEB8121932240055A159 /* wrap_glesmac.mm */,
+				1F80E7F4123A4524004F3227 /* wrap_gles2mac.mm */,
+				293F04C20F45C54700338747 /* symbianframe.h */,
+				293F04C30F45C54700338747 /* symbiandsa.h */,
+				293F04C40F45C54700338747 /* symbianbtapi.h */,
+				293F04C50F45C54700338747 /* parsesdp.h */,
+				293F04C60F45C54700338747 /* imp_symbiantilt.h */,
+				293F04C70F45C54700338747 /* imp_powerapi.h */,
+				293F04C80F45C54700338747 /* imp_dspchange.h */,
+				293F04C90F45C54700338747 /* imp_ddraw.h */,
+				293F04CA0F45C54700338747 /* imp_bluetooth.h */,
+				293F04CB0F45C54700338747 /* appleinstanceobj.h */,
+				293F04CC0F45C54700338747 /* appleframe.mm */,
+				293F04CD0F45C54700338747 /* appleframe.h */,
+				293F04CE0F45C54700338747 /* imp_gx.h */,
+			);
+			name = extapi_imp;
+			sourceTree = "<group>";
+		};
+		293F04A00F45C36B00338747 /* edgelib h */ = {
+			isa = PBXGroup;
+			children = (
+				293F04A10F45C37E00338747 /* extapi h */,
+				293F04D30F45C5B900338747 /* econnect.h */,
+				293F04D40F45C5B900338747 /* edevice.h */,
+				293F04D50F45C5B900338747 /* edgeframe.h */,
+				293F04D60F45C5B900338747 /* edisplay.h */,
+				293F04D70F45C5B900338747 /* efile.h */,
+				293F04D80F45C5B900338747 /* eini.h */,
+				293F04D90F45C5B900338747 /* einput.h */,
+				293F04DA0F45C5B900338747 /* eloader.h */,
+				293F04DB0F45C5B900338747 /* emath.h */,
+				293F04DC0F45C5B900338747 /* ememory.h */,
+				293F04DD0F45C5B900338747 /* eraw.h */,
+				293F04DE0F45C5B900338747 /* ereg.h */,
+				293F04DF0F45C5B900338747 /* esound.h */,
+				293F04E00F45C5B900338747 /* estdc.h */,
+				293F04E10F45C5B900338747 /* esurface.h */,
+				293F04E30F45C5B900338747 /* evtimer.h */,
+				293F04E40F45C5B900338747 /* econsole.h */,
+			);
+			name = "edgelib h";
+			sourceTree = "<group>";
+		};
+		293F04A10F45C37E00338747 /* extapi h */ = {
+			isa = PBXGroup;
+			children = (
+				293F04D00F45C57100338747 /* dataapi.h */,
+				293F04D10F45C57100338747 /* xmlapi.h */,
+				293F04D20F45C57100338747 /* netapi.h */,
+			);
+			name = "extapi h";
+			sourceTree = "<group>";
+		};
+		293F04A20F45C39000338747 /* extra */ = {
+			isa = PBXGroup;
+			children = (
+				293F04E50F45C5ED00338747 /* verinfo.h */,
+				293F04E60F45C5ED00338747 /* keynames.h */,
+				293F04E70F45C5ED00338747 /* exrect.h */,
+				293F04E80F45C5ED00338747 /* exmacro.h */,
+				293F04E90F45C5ED00338747 /* exblitfast.h */,
+				293F04EA0F45C5ED00338747 /* exblit.h */,
+				293F04EB0F45C5ED00338747 /* excoll.h */,
+			);
+			name = extra;
+			sourceTree = "<group>";
+		};
+		293F04A30F45C3C700338747 /* glplugin */ = {
+			isa = PBXGroup;
+			children = (
+				1F80E7F3123A4524004F3227 /* wrap_gles2.h */,
+				293F04EC0F45C60800338747 /* gldummy.h */,
+				293F04ED0F45C63800338747 /* wrap_gl.h */,
+				293F04EE0F45C63800338747 /* wrap_glesmac.h */,
+				293F04EF0F45C63800338747 /* wrap_gles.h */,
+			);
+			name = glplugin;
+			sourceTree = "<group>";
+		};
+		293F04A40F45C3E700338747 /* esound */ = {
+			isa = PBXGroup;
+			children = (
+				293F04F00F45C66600338747 /* silent.h */,
+				293F04F10F45C66600338747 /* hekkus.h */,
+				293F04F20F45C66600338747 /* openal.h */,
+			);
+			name = esound;
+			sourceTree = "<group>";
+		};
+		293F04A50F45C40400338747 /* surface c */ = {
+			isa = PBXGroup;
+			children = (
+				293F05490F45C77000338747 /* esurf_2d.cpp */,
+				293F05480F45C77000338747 /* esurf_2dbase.cpp */,
+				293F05470F45C77000338747 /* esurf_2drgba.cpp */,
+				1FA46F0212B8F25500479073 /* esurf_2ddisplay.cpp */,
+				293F05460F45C77000338747 /* esurf_3d.cpp */,
+			);
+			name = "surface c";
+			sourceTree = "<group>";
+		};
+		293F04A60F45C41000338747 /* loader c */ = {
+			isa = PBXGroup;
+			children = (
+				047B8295110492E3004CA5B3 /* eldr_pvr.cpp */,
+				293F052C0F45C76200338747 /* eldr_tga.cpp */,
+				293F052D0F45C76200338747 /* eldr_ms3d.cpp */,
+				293F052E0F45C76200338747 /* eldr_png.cpp */,
+				293F052F0F45C76200338747 /* eldr_jpg.cpp */,
+				293F05300F45C76200338747 /* eldr_gif.cpp */,
+				293F05310F45C76200338747 /* eldr_dae.cpp */,
+				293F05320F45C76200338747 /* eldr_bmp.cpp */,
+				293F05330F45C76200338747 /* eldr_base.cpp */,
+				293F05340F45C76200338747 /* eldr_3ds.cpp */,
+				293F05350F45C76200338747 /* eldr_e3d.cpp */,
+			);
+			name = "loader c";
+			sourceTree = "<group>";
+		};
+		293F04A70F45C41B00338747 /* edgelib c */ = {
+			isa = PBXGroup;
+			children = (
+				293F04A80F45C42300338747 /* extapi c */,
+				293F05060F45C71D00338747 /* edgeframe.cpp */,
+				1FA46F0012B8F23B00479073 /* emod_camera.cpp */,
+				293F05070F45C71D00338747 /* emod_connect.cpp */,
+				293F05080F45C71D00338747 /* emod_console.cpp */,
+				293F05090F45C71D00338747 /* emod_device.cpp */,
+				293F050A0F45C71D00338747 /* emod_dsp.cpp */,
+				293F050B0F45C71D00338747 /* emod_file.cpp */,
+				293F050C0F45C71D00338747 /* emod_ini.cpp */,
+				293F050D0F45C71D00338747 /* emod_math.cpp */,
+				293F050E0F45C71D00338747 /* emod_memory.cpp */,
+				293F050F0F45C71D00338747 /* emod_raw.cpp */,
+				293F05100F45C71D00338747 /* emod_register.cpp */,
+				293F05110F45C71D00338747 /* emod_sound.cpp */,
+				293F05120F45C71D00338747 /* emod_std.cpp */,
+				293F05140F45C71D00338747 /* emod_vtimer.cpp */,
+				293F05150F45C71D00338747 /* emod_input.cpp */,
+			);
+			name = "edgelib c";
+			sourceTree = "<group>";
+		};
+		293F04A80F45C42300338747 /* extapi c */ = {
+			isa = PBXGroup;
+			children = (
+				293F05260F45C74400338747 /* extapi_data.cpp */,
+				293F05270F45C74400338747 /* extapi_xml.cpp */,
+			);
+			name = "extapi c";
+			sourceTree = "<group>";
+		};
+		293F04A90F45C43100338747 /* edgecore c */ = {
+			isa = PBXGroup;
+			children = (
+				047B829811049328004CA5B3 /* cthread.cpp */,
+				293F04FA0F45C6F600338747 /* cnet.cpp */,
+				293F04FB0F45C6F600338747 /* cmemory.cpp */,
+				293F04FC0F45C6F600338747 /* cfile.cpp */,
+				293F04FD0F45C6F600338747 /* cevent.cpp */,
+				293F04FE0F45C6F600338747 /* cdisplay.cpp */,
+				1FA46F0C12B8F33C00479073 /* ccamera.cpp */,
+				293F04FF0F45C6F600338747 /* chelper.cpp */,
+			);
+			name = "edgecore c";
+			sourceTree = "<group>";
+		};
+		293F05840F45CA4A00338747 /* simulator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = simulator;
+			sourceTree = "<group>";
+		};
+		293F05D40F45CB9400338747 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				03E3B1D611526DAB006AA419 /* libedgerender.a */,
+				03E3B18411526B70006AA419 /* libedgerender.a */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				1FF66BB21202D01C005CDF1F /* Resources-iPad */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* eventcore_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F95661E12DDCE4800C362E1 /* broken.dat */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				293F05D40F45CB9400338747 /* device */,
+				293F05840F45CA4A00338747 /* simulator */,
+				293F05760F45C92900338747 /* libz.dylib */,
+				293F05650F45C8FE00338747 /* AudioToolbox.framework */,
+				293F05660F45C8FE00338747 /* OpenGLES.framework */,
+				293F05670F45C8FE00338747 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* eventcore simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "eventcore simulator" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eventcore simulator";
+			productName = eventcore;
+			productReference = 1D6058910D05DD3D006BFB54 /* eventcore.app */;
+			productType = "com.apple.product-type.application";
+		};
+		293F05990F45CB8E00338747 /* eventcore device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293F05CE0F45CB8E00338747 /* Build configuration list for PBXNativeTarget "eventcore device" */;
+			buildPhases = (
+				293F059A0F45CB8E00338747 /* Resources */,
+				293F059B0F45CB8E00338747 /* Sources */,
+				293F05C50F45CB8E00338747 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "eventcore device";
+			productName = eventcore;
+			productReference = 293F05D10F45CB8E00338747 /* eventcore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "eventcore" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* eventcore simulator */,
+				293F05990F45CB8E00338747 /* eventcore device */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F95661F12DDCE4800C362E1 /* broken.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293F059A0F45CB8E00338747 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F04CF0F45C54700338747 /* appleframe.mm in Sources */,
+				293F05000F45C6F600338747 /* cnet.cpp in Sources */,
+				293F05010F45C6F600338747 /* cmemory.cpp in Sources */,
+				293F05020F45C6F600338747 /* cfile.cpp in Sources */,
+				293F05030F45C6F600338747 /* cevent.cpp in Sources */,
+				293F05040F45C6F600338747 /* cdisplay.cpp in Sources */,
+				293F05050F45C6F600338747 /* chelper.cpp in Sources */,
+				293F05160F45C71D00338747 /* edgeframe.cpp in Sources */,
+				293F05170F45C71D00338747 /* emod_connect.cpp in Sources */,
+				293F05180F45C71D00338747 /* emod_console.cpp in Sources */,
+				293F05190F45C71D00338747 /* emod_device.cpp in Sources */,
+				293F051A0F45C71D00338747 /* emod_dsp.cpp in Sources */,
+				293F051B0F45C71D00338747 /* emod_file.cpp in Sources */,
+				293F051C0F45C71D00338747 /* emod_ini.cpp in Sources */,
+				293F051D0F45C71D00338747 /* emod_math.cpp in Sources */,
+				293F051E0F45C71D00338747 /* emod_memory.cpp in Sources */,
+				293F051F0F45C71D00338747 /* emod_raw.cpp in Sources */,
+				293F05200F45C71D00338747 /* emod_register.cpp in Sources */,
+				293F05210F45C71D00338747 /* emod_sound.cpp in Sources */,
+				293F05220F45C71D00338747 /* emod_std.cpp in Sources */,
+				293F05240F45C71D00338747 /* emod_vtimer.cpp in Sources */,
+				293F05250F45C71D00338747 /* emod_input.cpp in Sources */,
+				293F05290F45C74400338747 /* extapi_data.cpp in Sources */,
+				293F052A0F45C74400338747 /* extapi_xml.cpp in Sources */,
+				293F05360F45C76200338747 /* eldr_tga.cpp in Sources */,
+				293F05370F45C76200338747 /* eldr_ms3d.cpp in Sources */,
+				293F05380F45C76200338747 /* eldr_png.cpp in Sources */,
+				293F05390F45C76200338747 /* eldr_jpg.cpp in Sources */,
+				293F053A0F45C76200338747 /* eldr_gif.cpp in Sources */,
+				293F053B0F45C76200338747 /* eldr_dae.cpp in Sources */,
+				293F053C0F45C76200338747 /* eldr_bmp.cpp in Sources */,
+				293F053D0F45C76200338747 /* eldr_base.cpp in Sources */,
+				293F053E0F45C76200338747 /* eldr_3ds.cpp in Sources */,
+				293F053F0F45C76200338747 /* eldr_e3d.cpp in Sources */,
+				293F054A0F45C77000338747 /* esurf_3d.cpp in Sources */,
+				293F054B0F45C77000338747 /* esurf_2drgba.cpp in Sources */,
+				293F054C0F45C77000338747 /* esurf_2dbase.cpp in Sources */,
+				293F054D0F45C77000338747 /* esurf_2d.cpp in Sources */,
+				293F054F0F45C78F00338747 /* cmain.cpp in Sources */,
+				047B8297110492E3004CA5B3 /* eldr_pvr.cpp in Sources */,
+				047B829A11049328004CA5B3 /* cthread.cpp in Sources */,
+				1FA46F0112B8F23B00479073 /* emod_camera.cpp in Sources */,
+				1FA46F0D12B8F33C00479073 /* ccamera.cpp in Sources */,
+				1F8585AB12DDB17E00E586FF /* esurf_2ddisplay.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293F059B0F45CB8E00338747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293F059C0F45CB8E00338747 /* appleframe.mm in Sources */,
+				293F059D0F45CB8E00338747 /* cnet.cpp in Sources */,
+				293F059E0F45CB8E00338747 /* cmemory.cpp in Sources */,
+				293F059F0F45CB8E00338747 /* cfile.cpp in Sources */,
+				293F05A00F45CB8E00338747 /* cevent.cpp in Sources */,
+				293F05A10F45CB8E00338747 /* cdisplay.cpp in Sources */,
+				293F05A20F45CB8E00338747 /* chelper.cpp in Sources */,
+				293F05A30F45CB8E00338747 /* edgeframe.cpp in Sources */,
+				293F05A40F45CB8E00338747 /* emod_connect.cpp in Sources */,
+				293F05A50F45CB8E00338747 /* emod_console.cpp in Sources */,
+				293F05A60F45CB8E00338747 /* emod_device.cpp in Sources */,
+				293F05A70F45CB8E00338747 /* emod_dsp.cpp in Sources */,
+				293F05A80F45CB8E00338747 /* emod_file.cpp in Sources */,
+				293F05A90F45CB8E00338747 /* emod_ini.cpp in Sources */,
+				293F05AA0F45CB8E00338747 /* emod_math.cpp in Sources */,
+				293F05AB0F45CB8E00338747 /* emod_memory.cpp in Sources */,
+				293F05AC0F45CB8E00338747 /* emod_raw.cpp in Sources */,
+				293F05AD0F45CB8E00338747 /* emod_register.cpp in Sources */,
+				293F05AE0F45CB8E00338747 /* emod_sound.cpp in Sources */,
+				293F05AF0F45CB8E00338747 /* emod_std.cpp in Sources */,
+				293F05B10F45CB8E00338747 /* emod_vtimer.cpp in Sources */,
+				293F05B20F45CB8E00338747 /* emod_input.cpp in Sources */,
+				293F05B30F45CB8E00338747 /* extapi_data.cpp in Sources */,
+				293F05B40F45CB8E00338747 /* extapi_xml.cpp in Sources */,
+				293F05B60F45CB8E00338747 /* eldr_tga.cpp in Sources */,
+				293F05B70F45CB8E00338747 /* eldr_ms3d.cpp in Sources */,
+				293F05B80F45CB8E00338747 /* eldr_png.cpp in Sources */,
+				293F05B90F45CB8E00338747 /* eldr_jpg.cpp in Sources */,
+				293F05BA0F45CB8E00338747 /* eldr_gif.cpp in Sources */,
+				293F05BB0F45CB8E00338747 /* eldr_dae.cpp in Sources */,
+				293F05BC0F45CB8E00338747 /* eldr_bmp.cpp in Sources */,
+				293F05BD0F45CB8E00338747 /* eldr_base.cpp in Sources */,
+				293F05BE0F45CB8E00338747 /* eldr_3ds.cpp in Sources */,
+				293F05BF0F45CB8E00338747 /* eldr_e3d.cpp in Sources */,
+				293F05C00F45CB8E00338747 /* esurf_3d.cpp in Sources */,
+				293F05C10F45CB8E00338747 /* esurf_2drgba.cpp in Sources */,
+				293F05C20F45CB8E00338747 /* esurf_2dbase.cpp in Sources */,
+				293F05C30F45CB8E00338747 /* esurf_2d.cpp in Sources */,
+				293F05C40F45CB8E00338747 /* cmain.cpp in Sources */,
+				047B8296110492E3004CA5B3 /* eldr_pvr.cpp in Sources */,
+				047B829911049328004CA5B3 /* cthread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eventcore_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Development/edgelib/devlib/source,
+					/Development/edgelib/extsdk/zlib/include,
+					/Development/edgelib/devlib/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dist/lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../devlib/workspace/prj_iphone/release\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = eventcore;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eventcore_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/Development/edgelib/devlib/source,
+					/Development/edgelib/extsdk/zlib/include,
+					/Development/edgelib/devlib/include,
+				);
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dist/lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../devlib/workspace/prj_iphone/release\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = eventcore;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		293F05CF0F45CB8E00338747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eventcore_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/svn/edgelib/devlib/source,
+					/SVN/edgelib/extsdk/zlib/include,
+					/SVN/edgelib/devlib/include,
+				);
+				INFOPLIST_FILE = /SVN/edgelib/devother/devworkspace/prj_iphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dist/lib/iphone\"",
+				);
+				PRODUCT_NAME = eventcore;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.0;
+			};
+			name = Debug;
+		};
+		293F05D00F45CB8E00338747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = eventcore_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					/svn/edgelib/devlib/source,
+					/SVN/edgelib/extsdk/zlib/include,
+					/SVN/edgelib/devlib/include,
+				);
+				INFOPLIST_FILE = /SVN/edgelib/devother/devworkspace/prj_iphone/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../dist/lib/iphone\"",
+				);
+				PRODUCT_NAME = eventcore;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos4.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Sondaar (47QR8UES95)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.2.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EA830685-F44A-447F-9F02-652E950980B1";
+				SDKROOT = iphoneos4.2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Marcel Sondaar (47QR8UES95)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.2.1;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "EA830685-F44A-447F-9F02-652E950980B1";
+				SDKROOT = iphoneos4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "eventcore simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		293F05CE0F45CB8E00338747 /* Build configuration list for PBXNativeTarget "eventcore device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293F05CF0F45CB8E00338747 /* Debug */,
+				293F05D00F45CB8E00338747 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "eventcore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

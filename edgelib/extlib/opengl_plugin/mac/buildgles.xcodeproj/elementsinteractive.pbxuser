@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeSDKPreference = iphonesimulator2.0;
+		activeTarget = D2AAC07D0554694100DB518D /* EdgeOpenGL */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* EdgeOpenGL */,
+		);
+		breakpoints = (
+			29E35FE40E4859330010A3F1 /* wrap_gles_iphone.h:139 */,
+		);
+		codeSenseManager = 29CD2FEC0E1E6F3500E31218 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					721,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					793,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 257417837;
+			PBXWorkspaceStateSaveDate = 257417837;
+		};
+		perUserProjectItems = {
+			29041E120F57E27000C52E89 /* PBXTextBookmark */ = 29041E120F57E27000C52E89 /* PBXTextBookmark */;
+			29041E160F57E2BC00C52E89 /* PBXTextBookmark */ = 29041E160F57E2BC00C52E89 /* PBXTextBookmark */;
+			29041E1A0F57E31700C52E89 /* PBXTextBookmark */ = 29041E1A0F57E31700C52E89 /* PBXTextBookmark */;
+			29041E1D0F57E32800C52E89 /* PBXTextBookmark */ = 29041E1D0F57E32800C52E89 /* PBXTextBookmark */;
+			29041E1F0F57E36300C52E89 /* PBXTextBookmark */ = 29041E1F0F57E36300C52E89 /* PBXTextBookmark */;
+			29041E220F57E37B00C52E89 /* PBXTextBookmark */ = 29041E220F57E37B00C52E89 /* PBXTextBookmark */;
+			29041E250F57E3BD00C52E89 /* PBXTextBookmark */ = 29041E250F57E3BD00C52E89 /* PBXTextBookmark */;
+			29041E270F57E8E700C52E89 /* PBXTextBookmark */ = 29041E270F57E8E700C52E89 /* PBXTextBookmark */;
+			29041E300F57E93B00C52E89 /* PBXTextBookmark */ = 29041E300F57E93B00C52E89 /* PBXTextBookmark */;
+			290859470E2CDE8500332F2E = 290859470E2CDE8500332F2E /* PBXTextBookmark */;
+			293723920F56ABE8006D55ED = 293723920F56ABE8006D55ED /* PBXTextBookmark */;
+			293723AE0F56B15C006D55ED = 293723AE0F56B15C006D55ED /* PBXTextBookmark */;
+			297C10B60E22077F00ED35CD = 297C10B60E22077F00ED35CD /* PBXTextBookmark */;
+			297C10B80E22077F00ED35CD = 297C10B80E22077F00ED35CD /* PBXTextBookmark */;
+			297C10BB0E22077F00ED35CD = 297C10BB0E22077F00ED35CD /* PBXTextBookmark */;
+			297C10C10E22077F00ED35CD = 297C10C10E22077F00ED35CD /* PBXTextBookmark */;
+			297C10C40E22077F00ED35CD = 297C10C40E22077F00ED35CD /* PBXTextBookmark */;
+			297C10C70E22077F00ED35CD = 297C10C70E22077F00ED35CD /* PBXTextBookmark */;
+			297C10CD0E22077F00ED35CD = 297C10CD0E22077F00ED35CD /* PBXTextBookmark */;
+		};
+		sourceControlManager = 29CD2FEB0E1E6F3500E31218 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29041E120F57E27000C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 371";
+		rLen = 0;
+		rLoc = 10775;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E160F57E2BC00C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 367";
+		rLen = 0;
+		rLoc = 10701;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E1A0F57E31700C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 371";
+		rLen = 0;
+		rLoc = 10789;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E1D0F57E32800C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 371";
+		rLen = 0;
+		rLoc = 10789;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E1F0F57E36300C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 359";
+		rLen = 0;
+		rLoc = 10474;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E220F57E37B00C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 363";
+		rLen = 0;
+		rLoc = 10626;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E250F57E3BD00C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 360";
+		rLen = 0;
+		rLoc = 10518;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E270F57E8E700C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 360";
+		rLen = 0;
+		rLoc = 10518;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	29041E300F57E93B00C52E89 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 360";
+		rLen = 0;
+		rLoc = 10518;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	290859470E2CDE8500332F2E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C12EA0E22577000ED35CD /* gl.h */;
+		name = "gl.h: 350";
+		rLen = 0;
+		rLoc = 13595;
+		rType = 0;
+		vrLen = 1696;
+		vrLoc = 13271;
+	};
+	293723920F56ABE8006D55ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 360";
+		rLen = 0;
+		rLoc = 10512;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	293723AE0F56B15C006D55ED /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29D979AD0F456DD3000A4618 /* wrap_glesmac.h */;
+		name = "wrap_glesmac.h: 371";
+		rLen = 0;
+		rLoc = 10775;
+		rType = 0;
+		vrLen = 1092;
+		vrLoc = 10276;
+	};
+	297C10B60E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C10B70E22077F00ED35CD /* glext.h */;
+		name = "glext.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2208;
+		vrLoc = 6832;
+	};
+	297C10B70E22077F00ED35CD /* glext.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = glext.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h;
+		sourceTree = "<absolute>";
+	};
+	297C10B80E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29CD308F0E1E724B00E31218 /* EAGL.h */;
+		name = "EAGL.h: 46";
+		rLen = 0;
+		rLoc = 1506;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 1034;
+	};
+	297C10BB0E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C10BC0E22077F00ED35CD /* EAGL.h */;
+		name = "EAGL.h: 26";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 732;
+	};
+	297C10BC0E22077F00ED35CD /* EAGL.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = EAGL.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h;
+		sourceTree = "<absolute>";
+	};
+	297C10C10E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29CD308F0E1E724B00E31218 /* EAGL.h */;
+		name = "EAGL.h: 46";
+		rLen = 0;
+		rLoc = 1506;
+		rType = 0;
+		vrLen = 1621;
+		vrLoc = 348;
+	};
+	297C10C40E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C10C50E22077F00ED35CD /* gl.h */;
+		name = "gl.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2974;
+		vrLoc = 34760;
+	};
+	297C10C50E22077F00ED35CD /* gl.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = gl.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h;
+		sourceTree = "<absolute>";
+	};
+	297C10C70E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C10C80E22077F00ED35CD /* glext.h */;
+		name = "glext.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 2208;
+		vrLoc = 6832;
+	};
+	297C10C80E22077F00ED35CD /* glext.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = glext.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/glext.h;
+		sourceTree = "<absolute>";
+	};
+	297C10CD0E22077F00ED35CD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 297C10CE0E22077F00ED35CD /* EAGL.h */;
+		name = "EAGL.h: 26";
+		rLen = 0;
+		rLoc = 694;
+		rType = 0;
+		vrLen = 1331;
+		vrLoc = 732;
+	};
+	297C10CE0E22077F00ED35CD /* EAGL.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = EAGL.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h;
+		sourceTree = "<absolute>";
+	};
+	297C12EA0E22577000ED35CD /* gl.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = gl.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h;
+		sourceTree = "<absolute>";
+	};
+	29CD2FEB0E1E6F3500E31218 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	29CD2FEC0E1E6F3500E31218 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	29CD30030E1E6FC300E31218 /* wrap_gles_iphone.h */ = {
+		isa = PBXFileReference;
+		fileEncoding = 4;
+		lastKnownFileType = sourcecode.c.h;
+		name = wrap_gles_iphone.h;
+		path = /projects/EdgeOpenGL/code/wrap_gles_iphone.h;
+		sourceTree = "<absolute>";
+	};
+	29CD308F0E1E724B00E31218 /* EAGL.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = EAGL.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator2.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h;
+		sourceTree = "<absolute>";
+	};
+	29D979AD0F456DD3000A4618 /* wrap_glesmac.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1266, 7042}}";
+			sepNavSelRange = "{10518, 0}";
+			sepNavVisRange = "{10276, 1092}";
+		};
+	};
+	29D979AE0F456DD3000A4618 /* wrap_glesmac.mm */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1220, 870}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 26}";
+			sepNavWindowFrame = "{{15, -1}, {1279, 998}}";
+		};
+	};
+	29E35FE40E4859330010A3F1 /* wrap_gles_iphone.h:139 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 29CD30030E1E6FC300E31218 /* wrap_gles_iphone.h */;
+		functionName = "EdgeGLInterface::Open(ENATIVETYPE wnd, unsigned long width, unsigned long height)";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 139;
+		location = edgetest;
+		modificationTime = 246442232.268763;
+		state = 1;
+	};
+	D2AAC07D0554694100DB518D /* EdgeOpenGL */ = {
+		activeExec = 0;
+	};
+}

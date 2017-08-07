@@ -1,0 +1,5 @@
+#{"Hello World"},(0x10205D9E),1,0,0
+(0x101F6F88), 0, 0, 0, {"Series60ProductID"}
+"\Symbian\6.1\Series60\epoc32\data\z\system\apps\helloworld\helloworld.rsc"-"!:\system\apps\helloworld\helloworld.rsc"
+"\Symbian\6.1\Series60\epoc32\data\z\system\apps\helloworld\helloworld.aif"-"!:\system\apps\helloworld\helloworld.aif"
+"helloworld.app"-"!:\system\apps\helloworld\helloworld.app"

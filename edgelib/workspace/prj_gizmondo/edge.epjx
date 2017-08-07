@@ -1,0 +1,75 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "edge"
+caption      = "edge"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "1.00.1"
+capabilities = "None"
+selplatform  = "Gizmondo"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcepath = "edgecore"
+	sourcefile = "..\..\source\core\cmemory.cpp"
+	sourcefile = "..\..\source\core\cdisplay.cpp"
+	sourcefile = "..\..\source\core\cevent.cpp"
+	sourcefile = "..\..\source\core\cfile.cpp"
+	sourcefile = "..\..\source\core\chelper.cpp"
+	sourcefile = "..\..\source\core\cnet.cpp"
+	sourcefile = "..\..\source\core\cthread.cpp"
+	sourcefile = "..\..\source\core\ccamera.cpp"
+endpath = 0
+sourcepath = "edgelib"
+	sourcepath = "extapi"
+		sourcefile = "..\..\source\extapi_data.cpp"
+		sourcefile = "..\..\source\extapi_xml.cpp"
+	endpath = 1
+	sourcefile = "..\..\source\edgeframe.cpp"
+	sourcefile = "..\..\source\emod_camera.cpp"
+	sourcefile = "..\..\source\emod_connect.cpp"
+	sourcefile = "..\..\source\emod_console.cpp"
+	sourcefile = "..\..\source\emod_device.cpp"
+	sourcefile = "..\..\source\emod_dsp.cpp"
+	sourcefile = "..\..\source\emod_file.cpp"
+	sourcefile = "..\..\source\emod_ini.cpp"
+	sourcefile = "..\..\source\emod_input.cpp"
+	sourcefile = "..\..\source\emod_math.cpp"
+	sourcefile = "..\..\source\emod_memory.cpp"
+	sourcefile = "..\..\source\emod_raw.cpp"
+	sourcefile = "..\..\source\emod_register.cpp"
+	sourcefile = "..\..\source\emod_sound.cpp"
+	sourcefile = "..\..\source\emod_std.cpp"
+	sourcefile = "..\..\source\emod_vtimer.cpp"
+endpath = 0
+sourcepath = "loader"
+	sourcefile = "..\..\source\loader\eldr_tga.cpp"
+	sourcefile = "..\..\source\loader\eldr_3ds.cpp"
+	sourcefile = "..\..\source\loader\eldr_base.cpp"
+	sourcefile = "..\..\source\loader\eldr_bmp.cpp"
+	sourcefile = "..\..\source\loader\eldr_gif.cpp"
+	sourcefile = "..\..\source\loader\eldr_jpg.cpp"
+	sourcefile = "..\..\source\loader\eldr_ms3d.cpp"
+	sourcefile = "..\..\source\loader\eldr_png.cpp"
+	sourcefile = "..\..\source\loader\eldr_e3d.cpp"
+	sourcefile = "..\..\source\loader\eldr_dae.cpp"
+	sourcefile = "..\..\source\loader\eldr_pvr.cpp"
+endpath = 1
+sourcepath = "surface"
+	sourcefile = "..\..\source\surface\esurf_3d.cpp"
+	sourcefile = "..\..\source\surface\esurf_2d.cpp"
+	sourcefile = "..\..\source\surface\esurf_2dbase.cpp"
+	sourcefile = "..\..\source\surface\esurf_2ddisplay.cpp"
+	sourcefile = "..\..\source\surface\esurf_2drgba.cpp"
+endpath = 1
+
+# Project environment
+incpath = "../../extsdk/zlib/include"
+incpath = "../../source"
+commandlib_user = "%comspec% copy "%binfile%.lib" "..\..\..\dist\lib\gizmondo\edge.lib""
+incpath = "../include"

@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		297A3D830EE560A90062F6A9 /* multitouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 297A3D820EE560A90062F6A9 /* multitouch.cpp */; };
+		297A3E580EE560DD0062F6A9 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E450EE560DD0062F6A9 /* libedge.a */; };
+		297A3E590EE560DD0062F6A9 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E460EE560DD0062F6A9 /* libedgerender.a */; };
+		297A3E5A0EE560DD0062F6A9 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E470EE560DD0062F6A9 /* libplugingl1-1.a */; };
+		297A3E5E0EE560DD0062F6A9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4B0EE560DD0062F6A9 /* libz.dylib */; };
+		297A3E5F0EE560DD0062F6A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4C0EE560DD0062F6A9 /* AudioToolbox.framework */; };
+		297A3E600EE560DD0062F6A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4D0EE560DD0062F6A9 /* CoreGraphics.framework */; };
+		297A3E610EE560DD0062F6A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4E0EE560DD0062F6A9 /* Foundation.framework */; };
+		297A3E620EE560DD0062F6A9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4F0EE560DD0062F6A9 /* OpenGLES.framework */; };
+		297A3E630EE560DD0062F6A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E500EE560DD0062F6A9 /* QuartzCore.framework */; };
+		297A3E640EE560DD0062F6A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E510EE560DD0062F6A9 /* UIKit.framework */; };
+		297A3E9B0EE5679D0062F6A9 /* multitouch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 297A3D820EE560A90062F6A9 /* multitouch.cpp */; };
+		297A3E9D0EE5679D0062F6A9 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E3E0EE560DD0062F6A9 /* libedge.a */; };
+		297A3E9E0EE5679D0062F6A9 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E3F0EE560DD0062F6A9 /* libedgerender.a */; };
+		297A3E9F0EE5679D0062F6A9 /* libplugingl1-1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E400EE560DD0062F6A9 /* libplugingl1-1.a */; };
+		297A3EA30EE5679D0062F6A9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4B0EE560DD0062F6A9 /* libz.dylib */; };
+		297A3EA40EE5679D0062F6A9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4C0EE560DD0062F6A9 /* AudioToolbox.framework */; };
+		297A3EA50EE5679D0062F6A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4D0EE560DD0062F6A9 /* CoreGraphics.framework */; };
+		297A3EA60EE5679D0062F6A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4E0EE560DD0062F6A9 /* Foundation.framework */; };
+		297A3EA70EE5679D0062F6A9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E4F0EE560DD0062F6A9 /* OpenGLES.framework */; };
+		297A3EA80EE5679D0062F6A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E500EE560DD0062F6A9 /* QuartzCore.framework */; };
+		297A3EA90EE5679D0062F6A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 297A3E510EE560DD0062F6A9 /* UIKit.framework */; };
+		297A3ECD0EE56ABB0062F6A9 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 297A3ECC0EE56ABB0062F6A9 /* ico57.png */; };
+		297A3ECE0EE56ABB0062F6A9 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 297A3ECC0EE56ABB0062F6A9 /* ico57.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6058910D05DD3D006BFB54 /* MultiTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		297A3D800EE55FF90062F6A9 /* MultiTouch_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTouch_Prefix.pch; sourceTree = "<group>"; };
+		297A3D810EE560A90062F6A9 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = ../code/main.h; sourceTree = SOURCE_ROOT; };
+		297A3D820EE560A90062F6A9 /* multitouch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = multitouch.cpp; path = ../code/multitouch.cpp; sourceTree = SOURCE_ROOT; };
+		297A3E3E0EE560DD0062F6A9 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = "../../../lib/iphone-simulator/libedge.a"; sourceTree = SOURCE_ROOT; };
+		297A3E3F0EE560DD0062F6A9 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = "../../../lib/iphone-simulator/libedgerender.a"; sourceTree = SOURCE_ROOT; };
+		297A3E400EE560DD0062F6A9 /* libplugingl1-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplugingl1-1.a"; path = "../../../lib/iphone-simulator/opengl/libplugingl1-1.a"; sourceTree = SOURCE_ROOT; };
+		297A3E450EE560DD0062F6A9 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = ../../../lib/iphone/libedge.a; sourceTree = SOURCE_ROOT; };
+		297A3E460EE560DD0062F6A9 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = ../../../lib/iphone/libedgerender.a; sourceTree = SOURCE_ROOT; };
+		297A3E470EE560DD0062F6A9 /* libplugingl1-1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libplugingl1-1.a"; path = "../../../lib/iphone/opengl/libplugingl1-1.a"; sourceTree = SOURCE_ROOT; };
+		297A3E4B0EE560DD0062F6A9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		297A3E4C0EE560DD0062F6A9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		297A3E4D0EE560DD0062F6A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		297A3E4E0EE560DD0062F6A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		297A3E4F0EE560DD0062F6A9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		297A3E500EE560DD0062F6A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		297A3E510EE560DD0062F6A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		297A3EAD0EE5679D0062F6A9 /* MultiTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		297A3ECC0EE56ABB0062F6A9 /* ico57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico57.png; path = ../res/icons/ico57.png; sourceTree = SOURCE_ROOT; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3E580EE560DD0062F6A9 /* libedge.a in Frameworks */,
+				297A3E590EE560DD0062F6A9 /* libedgerender.a in Frameworks */,
+				297A3E5A0EE560DD0062F6A9 /* libplugingl1-1.a in Frameworks */,
+				297A3E5E0EE560DD0062F6A9 /* libz.dylib in Frameworks */,
+				297A3E5F0EE560DD0062F6A9 /* AudioToolbox.framework in Frameworks */,
+				297A3E600EE560DD0062F6A9 /* CoreGraphics.framework in Frameworks */,
+				297A3E610EE560DD0062F6A9 /* Foundation.framework in Frameworks */,
+				297A3E620EE560DD0062F6A9 /* OpenGLES.framework in Frameworks */,
+				297A3E630EE560DD0062F6A9 /* QuartzCore.framework in Frameworks */,
+				297A3E640EE560DD0062F6A9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297A3E9C0EE5679D0062F6A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3E9D0EE5679D0062F6A9 /* libedge.a in Frameworks */,
+				297A3E9E0EE5679D0062F6A9 /* libedgerender.a in Frameworks */,
+				297A3E9F0EE5679D0062F6A9 /* libplugingl1-1.a in Frameworks */,
+				297A3EA30EE5679D0062F6A9 /* libz.dylib in Frameworks */,
+				297A3EA40EE5679D0062F6A9 /* AudioToolbox.framework in Frameworks */,
+				297A3EA50EE5679D0062F6A9 /* CoreGraphics.framework in Frameworks */,
+				297A3EA60EE5679D0062F6A9 /* Foundation.framework in Frameworks */,
+				297A3EA70EE5679D0062F6A9 /* OpenGLES.framework in Frameworks */,
+				297A3EA80EE5679D0062F6A9 /* QuartzCore.framework in Frameworks */,
+				297A3EA90EE5679D0062F6A9 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* MultiTouch.app */,
+				297A3EAD0EE5679D0062F6A9 /* MultiTouch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		297A3D7C0EE55FEB0062F6A9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				297A3D810EE560A90062F6A9 /* main.h */,
+				297A3D820EE560A90062F6A9 /* multitouch.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		297A3E3D0EE560DD0062F6A9 /* simulator */ = {
+			isa = PBXGroup;
+			children = (
+				297A3E3E0EE560DD0062F6A9 /* libedge.a */,
+				297A3E3F0EE560DD0062F6A9 /* libedgerender.a */,
+				297A3E400EE560DD0062F6A9 /* libplugingl1-1.a */,
+			);
+			name = simulator;
+			sourceTree = "<group>";
+		};
+		297A3E440EE560DD0062F6A9 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				297A3E450EE560DD0062F6A9 /* libedge.a */,
+				297A3E460EE560DD0062F6A9 /* libedgerender.a */,
+				297A3E470EE560DD0062F6A9 /* libplugingl1-1.a */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				297A3D7C0EE55FEB0062F6A9 /* Source */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				297A3D800EE55FF90062F6A9 /* MultiTouch_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				297A3ECC0EE56ABB0062F6A9 /* ico57.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				297A3E440EE560DD0062F6A9 /* device */,
+				297A3E4B0EE560DD0062F6A9 /* libz.dylib */,
+				297A3E4C0EE560DD0062F6A9 /* AudioToolbox.framework */,
+				297A3E4D0EE560DD0062F6A9 /* CoreGraphics.framework */,
+				297A3E4E0EE560DD0062F6A9 /* Foundation.framework */,
+				297A3E4F0EE560DD0062F6A9 /* OpenGLES.framework */,
+				297A3E500EE560DD0062F6A9 /* QuartzCore.framework */,
+				297A3E510EE560DD0062F6A9 /* UIKit.framework */,
+				297A3E3D0EE560DD0062F6A9 /* simulator */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* MultiTouch device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MultiTouch device" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiTouch device";
+			productName = MultiTouchTest;
+			productReference = 1D6058910D05DD3D006BFB54 /* MultiTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		297A3E980EE5679D0062F6A9 /* MultiTouch simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 297A3EAA0EE5679D0062F6A9 /* Build configuration list for PBXNativeTarget "MultiTouch simulator" */;
+			buildPhases = (
+				297A3E990EE5679D0062F6A9 /* Resources */,
+				297A3E9A0EE5679D0062F6A9 /* Sources */,
+				297A3E9C0EE5679D0062F6A9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MultiTouch simulator";
+			productName = MultiTouchTest;
+			productReference = 297A3EAD0EE5679D0062F6A9 /* MultiTouch.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MultiTouch" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* MultiTouch device */,
+				297A3E980EE5679D0062F6A9 /* MultiTouch simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3ECD0EE56ABB0062F6A9 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297A3E990EE5679D0062F6A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3ECE0EE56ABB0062F6A9 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3D830EE560A90062F6A9 /* multitouch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		297A3E9A0EE5679D0062F6A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297A3E9B0EE5679D0062F6A9 /* multitouch.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: B Jekel";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultiTouch_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = MultiTouch;
+				PROVISIONING_PROFILE = "8C74ADE9-E777-48A0-B791-7B9D18589116";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43AD91CB-7A81-4D31-85F9-894CE6A97101";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: B Jekel";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultiTouch_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = MultiTouch;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43AD91CB-7A81-4D31-85F9-894CE6A97101";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+		297A3EAB0EE5679D0062F6A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: B Jekel";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultiTouch_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = MultiTouch;
+				PROVISIONING_PROFILE = "8C74ADE9-E777-48A0-B791-7B9D18589116";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43AD91CB-7A81-4D31-85F9-894CE6A97101";
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Debug;
+		};
+		297A3EAC0EE5679D0062F6A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: B Jekel";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = MultiTouch_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = MultiTouch;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "43AD91CB-7A81-4D31-85F9-894CE6A97101";
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "MultiTouch device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		297A3EAA0EE5679D0062F6A9 /* Build configuration list for PBXNativeTarget "MultiTouch simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				297A3EAB0EE5679D0062F6A9 /* Debug */,
+				297A3EAC0EE5679D0062F6A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "MultiTouch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

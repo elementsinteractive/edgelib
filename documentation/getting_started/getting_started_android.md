@@ -1,0 +1,109 @@
+:warning: _This file was converted from the EDGELIB 4.02 documentation from 2012 and is included for historic purposes. The documentation is not maintained anymore: information is outdated and external links might be broken._
+
+# Getting started with Google Android
+
+## Required tools and SDKs
+Android applications require both a native and a Java part. To get started on Android, you will need the following SDKs and development tools:
+
+* A [Java Development Kit](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
+* The [Android SDK](http://developer.android.com/sdk/index.html)
+* The android [native development kit](http://developer.android.com/sdk/ndk/index.html)
+* The [ant build tool](http://ant.apache.org/)
+
+### Setting up a build environment
+Once you have installed the four SDK components, right-click my computer, select properties, and go to the advanced tab. Under environment variables, check that a jdk/bin/ folder is in the PATH environment variable, and check if JAVA_HOME exists and is set to the jdk/ folder. Update both if necessary to complete the configuration for Ant.  Update EDGELIB Builder's android.ini with the paths to the various SDKs - you can find it in the edge\tools\edgebuilder\platforms\ folder.
+
+## Building using EDGELIB Builder
+### Creating a .cpp source code file
+Create a new folder: `C:\projects\helloworld` which will contain all project files. Also create a new folder: `C:\projects\helloworld\code` to contain the source code. Create a new helloworld.cpp file and edit it with a text editor. Paste the following source code sample and save the source file:
+
+_helloworld.cpp (72 lines)_
+```c++
+/////////////////////////////////////////////////////////////////////
+// Code/helloworld.cpp
+// One of the EDGELIB tutorial samples for Android
+//
+// Copyright (c) 2010-2017 Elements Interactive B.V.
+// http://www.edgelib.com
+//
+// Show "hello world" on the screen and exit by hitting a key
+/////////////////////////////////////////////////////////////////////
+ 
+/////////////////////////////////////////////////////////////////////
+// Include and link the library                                    //
+/////////////////////////////////////////////////////////////////////
+ 
+//Include EDGELIB
+#include "edgemain.h"
+ 
+/////////////////////////////////////////////////////////////////////
+// Class definition                                                //
+/////////////////////////////////////////////////////////////////////
+ 
+//The main class
+class ClassMain : public ClassEdge
+{
+    public:
+        ClassMain(void);
+        ~ClassMain(void);
+        ERESULT OnNextFrame(ClassEDisplay *display, unsigned long timedelta);
+        void OnButtonDown(unsigned long bnr, EBUTTONLIST *blist);
+        void OnStylusDown(POINT pnt);
+};
+ 
+ 
+/////////////////////////////////////////////////////////////////////
+// ClassMain: public                                               //
+/////////////////////////////////////////////////////////////////////
+ 
+//ClassMain: constructor
+ClassMain::ClassMain(void)
+{
+}
+ 
+//ClassMain: destructor
+ClassMain::~ClassMain(void)
+{
+}
+ 
+//Callback: Called every frame
+ERESULT ClassMain::OnNextFrame(ClassEDisplay *display, unsigned long timedelta)
+{
+    display->buffer.DrawFont(0, 0, &display->fontinternal, "Hello World!");
+    return(E_OK);
+}
+ 
+//Callback: Called when the user pressed a key or button
+void ClassMain::OnButtonDown(unsigned long bnr, EBUTTONLIST *blist)
+{
+    Quit();
+}
+ 
+//Callback: Called when the user points the stylus down or clicks the left mouse button
+void ClassMain::OnStylusDown(POINT pnt)
+{
+    Quit();
+}
+ 
+ 
+/////////////////////////////////////////////////////////////////////
+// The program entry point                                         //
+/////////////////////////////////////////////////////////////////////
+ 
+ClassEdge *EdgeMain(EDGESTARTUP *data){ return(new ClassMain); }
+```
+
+### Set up a Android EDGELIB Builder project
+Open the EDGELIB Builder and select project -> new. Choose a location to save your project. Create a new folder and save it in `c:\projects\helloworld\workspace_android`. Click once on "untitled" in the project tree to rename it to Hello World, the name of the project. Then add helloworld.cpp to the source files folder in the project tree. Right click on this folder and select "add files to folder". Browse to helloworld.cpp and open it to add it to the project tree. Save the project file, choose "Android" as the target platform and click build -> rebuild all to build the code, then click build->Build Setup to create the Android packages. The folder `c:\projects\helloworld\workspace_android\release\android` will now contain several .apk files.  
+You can upload the package to a connected Android device by supplying the .apk file as an argument to adb: 
+`adb install c:\path\to\application.apk`
+
+### Advanced Android projects
+The build script provides a default AndroidManifest.xml and build.properties generated by the Android SDK. After a build you can find these files in the release/Android/project folder. You can provide custom versions of these files by placing your copy in the release/Android folder. Edgebuilder will then use those instead of the default versions. Note that some project settings are included in these files, and any changes will require you to update your custom versions as well.
+
+## Custom build solutions
+EDGELIB contains two parts for android.  
+The native part requires some arguments passed to the toolchain: the `-DANDROID` argument and an include reference to the edgelib headers are needed for compilation. For linking you will need to pass -ledge -ledgerender as the libraries and add the lib/android folder to the library paths.
+
+The java side is contained in edge.jar. You might want to extract it to retrieve the .class files. Since application startup also happens from the Java side, an activity needs to be created with the appropriate name. It has to be a subclass of EdgelibApp, and it should contain a loadlibrary statement referencing the native .so file built in the previous step. The android manifest should be modified such that it point to your subclass.
+

@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F828AE913D86F3200F10308 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F828AE813D86F3200F10308 /* Cocoa.framework */; };
+		1F828AFD13D86F9C00F10308 /* wrap_glmac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F828AFC13D86F9C00F10308 /* wrap_glmac.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F828AE513D86F3200F10308 /* liblibplugingl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibplugingl.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F828AE813D86F3200F10308 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1F828AEB13D86F3200F10308 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1F828AEC13D86F3200F10308 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1F828AED13D86F3200F10308 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F828AF013D86F3200F10308 /* libplugingl-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libplugingl-Prefix.pch"; sourceTree = "<group>"; };
+		1F828AFC13D86F9C00F10308 /* wrap_glmac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = wrap_glmac.mm; path = ../../wrap_glmac.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F828AE213D86F3200F10308 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F828AE913D86F3200F10308 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F828ADA13D86F3200F10308 = {
+			isa = PBXGroup;
+			children = (
+				1F828AEE13D86F3200F10308 /* libplugingl */,
+				1F828AE713D86F3200F10308 /* Frameworks */,
+				1F828AE613D86F3200F10308 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F828AE613D86F3200F10308 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F828AE513D86F3200F10308 /* liblibplugingl.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F828AE713D86F3200F10308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F828AE813D86F3200F10308 /* Cocoa.framework */,
+				1F828AEA13D86F3200F10308 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F828AEA13D86F3200F10308 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F828AEB13D86F3200F10308 /* AppKit.framework */,
+				1F828AEC13D86F3200F10308 /* CoreData.framework */,
+				1F828AED13D86F3200F10308 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1F828AEE13D86F3200F10308 /* libplugingl */ = {
+			isa = PBXGroup;
+			children = (
+				1F828AFC13D86F9C00F10308 /* wrap_glmac.mm */,
+				1F828AEF13D86F3200F10308 /* Supporting Files */,
+			);
+			path = libplugingl;
+			sourceTree = "<group>";
+		};
+		1F828AEF13D86F3200F10308 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F828AF013D86F3200F10308 /* libplugingl-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F828AE313D86F3200F10308 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F828AE413D86F3200F10308 /* libplugingl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F828AF313D86F3200F10308 /* Build configuration list for PBXNativeTarget "libplugingl" */;
+			buildPhases = (
+				1F828AE113D86F3200F10308 /* Sources */,
+				1F828AE213D86F3200F10308 /* Frameworks */,
+				1F828AE313D86F3200F10308 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libplugingl;
+			productName = libplugingl;
+			productReference = 1F828AE513D86F3200F10308 /* liblibplugingl.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F828ADC13D86F3200F10308 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Elements Interactive";
+			};
+			buildConfigurationList = 1F828ADF13D86F3200F10308 /* Build configuration list for PBXProject "libplugingl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F828ADA13D86F3200F10308;
+			productRefGroup = 1F828AE613D86F3200F10308 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F828AE413D86F3200F10308 /* libplugingl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F828AE113D86F3200F10308 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F828AFD13D86F9C00F10308 /* wrap_glmac.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F828AF113D86F3200F10308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1F828AF213D86F3200F10308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1F828AF413D86F3200F10308 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libplugingl/libplugingl-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Development/edgelib/devlib/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1F828AF513D86F3200F10308 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "libplugingl/libplugingl-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Development/edgelib/devlib/include;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F828ADF13D86F3200F10308 /* Build configuration list for PBXProject "libplugingl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F828AF113D86F3200F10308 /* Debug */,
+				1F828AF213D86F3200F10308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F828AF313D86F3200F10308 /* Build configuration list for PBXNativeTarget "libplugingl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F828AF413D86F3200F10308 /* Debug */,
+				1F828AF513D86F3200F10308 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F828ADC13D86F3200F10308 /* Project object */;
+}

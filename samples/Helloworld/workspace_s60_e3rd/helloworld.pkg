@@ -1,0 +1,13 @@
+&EN 
+  
+#{"Helloworld"},(0xF0205D9E),1,0,0 
+  
+%{"Vendor-EN"} 
+:"Vendor" 
+  
+[0x101F7961], 0, 0, 0, {"S60ProductID"} 
+  
+"\Symbian\9.1\S60_3rd\epoc32\release\gcce\urel\helloworld.exe"-"!:\sys\bin\helloworld.exe" 
+"\Symbian\9.1\S60_3rd\Epoc32\Data\z\resource\apps\helloworld.rsc"-"!:\resource\apps\helloworld.rsc" 
+"\Symbian\9.1\S60_3rd\Epoc32\Data\z\private\10003a3f\import\apps\helloworld_reg.rsc"-"!:\private\10003a3f\import\apps\helloworld_reg.rsc" 
+"helloworld_aif.mbm"-"!:\resource\apps\helloworld_aif.mbm" 

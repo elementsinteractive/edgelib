@@ -1,0 +1,61 @@
+[Version]
+Signature   = "$Windows NT$"
+Provider    = "Edge"
+CESignature = "$Windows CE$"
+
+
+[CEDevice]
+BuildMax    = 0xE0000000
+
+
+[CEStrings]
+AppName     = "Connect"
+InstallDir  = %CE1%\%AppName%
+
+
+[DefaultInstall]
+CopyFiles   = ExeFiles,ResFiles
+CEShortcuts = Startmenu
+
+
+[SourceDisksNames.ARMPPC]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Pocket PC (2002)"
+2 = ,"ResFiles",,..\res
+[SourceDisksNames.ARMPPC2003]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Pocket PC (2003)"
+2 = ,"ResFiles",,..\res
+[SourceDisksNames.ARMPPC2005]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Pocket PC (2005)"
+2 = ,"ResFiles",,..\res
+[SourceDisksNames.ARMWSP]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Smartphone (2002)"
+2 = ,"ResFiles",,..\res
+[SourceDisksNames.ARMWSP2003]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Smartphone (2003)"
+2 = ,"ResFiles",,..\res
+[SourceDisksNames.ARMWSP2005]
+1 = ,"ExeFiles",,"..\workspace_eide\release\WM Smartphone (2005)"
+2 = ,"ResFiles",,..\res
+
+
+[SourceDisksFiles]
+Connect.exe = 1
+font_fixed.bmp = 2
+
+
+[DestinationDirs]
+ExeFiles  = 0, %InstallDir%
+Startmenu = 0, %CE11%\Edge
+DefaultDestDir = 0, %InstallDir%
+
+
+[ExeFiles]
+"Connect.exe"
+
+
+[ResFiles]
+"font_fixed.bmp"
+
+
+[Startmenu]
+"Connect", 0, "Connect.exe"

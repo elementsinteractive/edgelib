@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		290DCF740EB0884700C74C09 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF710EB0884700C74C09 /* libedge.a */; };
+		290DCF750EB0884700C74C09 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF720EB0884700C74C09 /* libedgerender.a */; };
+		290DCF7D0EB0884D00C74C09 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF770EB0884D00C74C09 /* libz.dylib */; };
+		290DCF7E0EB0884D00C74C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF780EB0884D00C74C09 /* CoreGraphics.framework */; };
+		290DCF7F0EB0884D00C74C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF790EB0884D00C74C09 /* Foundation.framework */; };
+		290DCF800EB0884D00C74C09 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7A0EB0884D00C74C09 /* OpenGLES.framework */; };
+		290DCF810EB0884D00C74C09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7B0EB0884D00C74C09 /* QuartzCore.framework */; };
+		290DCF820EB0884D00C74C09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7C0EB0884D00C74C09 /* UIKit.framework */; };
+		290DCF870EB0886200C74C09 /* edgesaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290DCF840EB0886200C74C09 /* edgesaver.cpp */; };
+		290DCF8F0EB0889600C74C09 /* edgesaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 290DCF840EB0886200C74C09 /* edgesaver.cpp */; };
+		290DCF910EB0889600C74C09 /* libedge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF680EB0883200C74C09 /* libedge.a */; };
+		290DCF920EB0889600C74C09 /* libedgerender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF690EB0883200C74C09 /* libedgerender.a */; };
+		290DCF970EB0889600C74C09 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF770EB0884D00C74C09 /* libz.dylib */; };
+		290DCF980EB0889600C74C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF780EB0884D00C74C09 /* CoreGraphics.framework */; };
+		290DCF990EB0889600C74C09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF790EB0884D00C74C09 /* Foundation.framework */; };
+		290DCF9A0EB0889600C74C09 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7A0EB0884D00C74C09 /* OpenGLES.framework */; };
+		290DCF9B0EB0889600C74C09 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7B0EB0884D00C74C09 /* QuartzCore.framework */; };
+		290DCF9C0EB0889600C74C09 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DCF7C0EB0884D00C74C09 /* UIKit.framework */; };
+		29A7503B0EB0B96000F39386 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A7503A0EB0B96000F39386 /* ico57.png */; };
+		29A7503C0EB0B96000F39386 /* ico57.png in Resources */ = {isa = PBXBuildFile; fileRef = 29A7503A0EB0B96000F39386 /* ico57.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D6058910D05DD3D006BFB54 /* EdgeSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290DCF680EB0883200C74C09 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = "../../../lib/iphone-simulator/libedge.a"; sourceTree = SOURCE_ROOT; };
+		290DCF690EB0883200C74C09 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = "../../../lib/iphone-simulator/libedgerender.a"; sourceTree = SOURCE_ROOT; };
+		290DCF710EB0884700C74C09 /* libedge.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedge.a; path = ../../../lib/iphone/libedge.a; sourceTree = SOURCE_ROOT; };
+		290DCF720EB0884700C74C09 /* libedgerender.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libedgerender.a; path = ../../../lib/iphone/libedgerender.a; sourceTree = SOURCE_ROOT; };
+		290DCF770EB0884D00C74C09 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		290DCF780EB0884D00C74C09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		290DCF790EB0884D00C74C09 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		290DCF7A0EB0884D00C74C09 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		290DCF7B0EB0884D00C74C09 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		290DCF7C0EB0884D00C74C09 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		290DCF840EB0886200C74C09 /* edgesaver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = edgesaver.cpp; path = ../code/edgesaver.cpp; sourceTree = SOURCE_ROOT; };
+		290DCF850EB0886200C74C09 /* main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = main.h; path = ../code/main.h; sourceTree = SOURCE_ROOT; };
+		290DCF860EB0886200C74C09 /* settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = settings.h; path = ../code/settings.h; sourceTree = SOURCE_ROOT; };
+		290DCFA00EB0889600C74C09 /* EdgeSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		29A7503A0EB0B96000F39386 /* ico57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ico57.png; path = ../res/icons/ico57.png; sourceTree = SOURCE_ROOT; };
+		32CA4F630368D1EE00C91783 /* EdgeSaver_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeSaver_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290DCF740EB0884700C74C09 /* libedge.a in Frameworks */,
+				290DCF750EB0884700C74C09 /* libedgerender.a in Frameworks */,
+				290DCF7D0EB0884D00C74C09 /* libz.dylib in Frameworks */,
+				290DCF7E0EB0884D00C74C09 /* CoreGraphics.framework in Frameworks */,
+				290DCF7F0EB0884D00C74C09 /* Foundation.framework in Frameworks */,
+				290DCF800EB0884D00C74C09 /* OpenGLES.framework in Frameworks */,
+				290DCF810EB0884D00C74C09 /* QuartzCore.framework in Frameworks */,
+				290DCF820EB0884D00C74C09 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290DCF900EB0889600C74C09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290DCF910EB0889600C74C09 /* libedge.a in Frameworks */,
+				290DCF920EB0889600C74C09 /* libedgerender.a in Frameworks */,
+				290DCF970EB0889600C74C09 /* libz.dylib in Frameworks */,
+				290DCF980EB0889600C74C09 /* CoreGraphics.framework in Frameworks */,
+				290DCF990EB0889600C74C09 /* Foundation.framework in Frameworks */,
+				290DCF9A0EB0889600C74C09 /* OpenGLES.framework in Frameworks */,
+				290DCF9B0EB0889600C74C09 /* QuartzCore.framework in Frameworks */,
+				290DCF9C0EB0889600C74C09 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* EdgeSaver.app */,
+				290DCFA00EB0889600C74C09 /* EdgeSaver.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		290DCF670EB0883200C74C09 /* simulator */ = {
+			isa = PBXGroup;
+			children = (
+				290DCF680EB0883200C74C09 /* libedge.a */,
+				290DCF690EB0883200C74C09 /* libedgerender.a */,
+			);
+			name = simulator;
+			sourceTree = "<group>";
+		};
+		290DCF700EB0884700C74C09 /* device */ = {
+			isa = PBXGroup;
+			children = (
+				290DCF710EB0884700C74C09 /* libedge.a */,
+				290DCF720EB0884700C74C09 /* libedgerender.a */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		293059720EB087E600A51F9D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				290DCF840EB0886200C74C09 /* edgesaver.cpp */,
+				290DCF850EB0886200C74C09 /* main.h */,
+				290DCF860EB0886200C74C09 /* settings.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				293059720EB087E600A51F9D /* Source */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* EdgeSaver_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				29A7503A0EB0B96000F39386 /* ico57.png */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				290DCF770EB0884D00C74C09 /* libz.dylib */,
+				290DCF780EB0884D00C74C09 /* CoreGraphics.framework */,
+				290DCF790EB0884D00C74C09 /* Foundation.framework */,
+				290DCF7A0EB0884D00C74C09 /* OpenGLES.framework */,
+				290DCF7B0EB0884D00C74C09 /* QuartzCore.framework */,
+				290DCF7C0EB0884D00C74C09 /* UIKit.framework */,
+				290DCF700EB0884700C74C09 /* device */,
+				290DCF670EB0883200C74C09 /* simulator */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* EdgeSaver device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "EdgeSaver device" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EdgeSaver device";
+			productName = EdgeSaver;
+			productReference = 1D6058910D05DD3D006BFB54 /* EdgeSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		290DCF8C0EB0889600C74C09 /* EdgeSaver simulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 290DCF9D0EB0889600C74C09 /* Build configuration list for PBXNativeTarget "EdgeSaver simulator" */;
+			buildPhases = (
+				290DCF8D0EB0889600C74C09 /* Resources */,
+				290DCF8E0EB0889600C74C09 /* Sources */,
+				290DCF900EB0889600C74C09 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EdgeSaver simulator";
+			productName = EdgeSaver;
+			productReference = 290DCFA00EB0889600C74C09 /* EdgeSaver.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "EdgeSaver" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* EdgeSaver device */,
+				290DCF8C0EB0889600C74C09 /* EdgeSaver simulator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A7503B0EB0B96000F39386 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290DCF8D0EB0889600C74C09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29A7503C0EB0B96000F39386 /* ico57.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290DCF870EB0886200C74C09 /* edgesaver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		290DCF8E0EB0889600C74C09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				290DCF8F0EB0889600C74C09 /* edgesaver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EdgeSaver_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = EdgeSaver;
+				PROVISIONING_PROFILE = "AF5E9B01-BA08-4D4C-A5FD-87C4A6B0AEA4";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EdgeSaver_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone\"",
+					"\"$(SRCROOT)/../../../lib/iphone/opengl\"",
+				);
+				PRODUCT_NAME = EdgeSaver;
+				PROVISIONING_PROFILE = "AF5E9B01-BA08-4D4C-A5FD-87C4A6B0AEA4";
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+		290DCF9E0EB0889600C74C09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EdgeSaver_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = EdgeSaver;
+				PROVISIONING_PROFILE = DefaultProfileUuid;
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Debug;
+		};
+		290DCF9F0EB0889600C74C09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = EdgeSaver_Prefix.pch;
+				HEADER_SEARCH_PATHS = /projects/Edge/include;
+				INFOPLIST_FILE = Info.plist;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator\"",
+					"\"$(SRCROOT)/../../../lib/iphone-simulator/opengl\"",
+				);
+				PRODUCT_NAME = EdgeSaver;
+				PROVISIONING_PROFILE = DefaultProfileUuid;
+				SDKROOT = iphonesimulator2.0;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "EdgeSaver device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		290DCF9D0EB0889600C74C09 /* Build configuration list for PBXNativeTarget "EdgeSaver simulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				290DCF9E0EB0889600C74C09 /* Debug */,
+				290DCF9F0EB0889600C74C09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "EdgeSaver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

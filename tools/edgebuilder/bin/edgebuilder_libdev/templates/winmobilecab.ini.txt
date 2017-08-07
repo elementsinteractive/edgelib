@@ -1,0 +1,8 @@
+$% File Start %$
+vendor = "%vendor%"
+capabilities = "square, rotation"
+binname = "%binname%"
+shortcut = "programs\games"
+caption = "%caption%"
+addfile = "%binfile%.exe"-"%binname%.exe"
+%installfiles%

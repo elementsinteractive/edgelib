@@ -1,0 +1,37 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "EdgeCamera"
+caption      = "Camera Demo"
+vendor       = "EDGELIB licensee"
+vendorshort  = "EDGELIB"
+domain       = "nl.edgelib.samples.camera"
+target type  = "bin"
+appuid       = "0xed6eca17"
+version      = "0.01.0"
+capabilities = "UserEnvironment"
+fwdependencies = "None"
+selplatform  = "WM Pocket PC (2005),WM Smartphone (2002),Series 60 (3rd edition),WM Pocket PC (2002)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\camera.cpp"
+
+headerfile = "..\code\main.h"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 0
+resourcepath = "Install"
+	resourcefile = "..\..\..\..\..\..\SVN\edgelib\dist\samples\Camera\workspace_edgeide\Log.txt"
+endpath = 0
+
+# Project environment
+incpath = "."

@@ -1,0 +1,293 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Pack \tCtrl+N",          ID_FILE_NEWF
+        MENUITEM "&Open Pack...\tCtrl+O",       ID_FILE_OPENF
+        MENUITEM "&Close Pack",                 ID_FILE_CLOSEF
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_FILE_EXITP
+    END
+    POPUP "&Pack"
+    BEGIN
+        MENUITEM "&Add...",                     ID_PACK_ADD
+        MENUITEM "&Delete",                     ID_PACK_DELETE
+        MENUITEM "&Extract...",                 ID_PACK_EXTRACT
+        MENUITEM "&Open",                       ID_PACK_OPEN
+        MENUITEM "V&iew",                       ID_PACK_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Select a&ll\tCtrl+A",         ID_PACK_SELECTALL
+        MENUITEM SEPARATOR
+        MENUITEM "Change &vendor...",           ID_PACK_CHANGEVENDOR
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "Configure &vendors...",       ID_EXTRA_CONFIGUREVENDORS
+        POPUP "C&ompression"
+        BEGIN
+            MENUITEM "&ZLib",                       ID_TOOLS_COMPRESSZLIB
+            MENUITEM "&Edge",                       ID_TOOLS_COMPRESSEDGE
+            MENUITEM "&None",                       ID_TOOLS_COMPRESSNONE
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&EDGELIB website",            ID_HELP_WEBSITE
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+IDR_QUICKMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Packfile"
+    BEGIN
+        MENUITEM "&Open",                       ID_PACKFILE_OPEN
+        MENUITEM "V&iew",                       ID_PACKFILE_VIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Extract...",                 ID_PACKFILE_EXTRACT
+        MENUITEM "&Delete",                     ID_PACKFILE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &all",                 ID_PACKFILE_SELECTALL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 416, 236
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "Edge Packer"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_FILELIST,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,15,15,180,140
+    LTEXT           "",IDC_STATUSBAR,0,225,290,10,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    290,225,65,10
+    PUSHBUTTON      "Select all",IDC_SELECTALL,15,170,70,15,NOT WS_VISIBLE
+    PUSHBUTTON      "Quick menu",IDC_QUICKMENU,90,170,70,15,NOT WS_VISIBLE
+END
+
+IDD_SELECTVENDOR DIALOG DISCARDABLE  0, 0, 172, 97
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Configure vendors"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,75,50,14
+    LTEXT           "[ template ]",IDC_VENDORTXT,5,5,115,10
+    LISTBOX         IDC_VENDORID,5,15,105,55,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add...",IDADD,115,15,50,14
+    PUSHBUTTON      "Add local...",IDADDLOCAL,115,35,50,14
+    PUSHBUTTON      "Delete",IDDELETE,115,55,50,14
+END
+
+IDD_ADDVENDOR DIALOG DISCARDABLE  0, 0, 117, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add new vendor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,30,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,30,50,14
+    EDITTEXT        IDC_VENDORID,5,15,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VENDORCODE,40,15,70,12,ES_AUTOHSCROLL
+    LTEXT           "ID",IDC_STATIC,5,5,30,10
+    LTEXT           "Unlock code",IDC_STATIC,40,5,70,10
+END
+
+IDD_CHANGEVENDOR DIALOG DISCARDABLE  0, 0, 121, 97
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change vendor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,75,50,14
+    LTEXT           "[ template ]",IDC_VENDORTXT,5,5,115,10
+    LISTBOX         IDC_VENDORID,5,15,105,55,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONSOLE DIALOG DISCARDABLE  0, 0, 268, 211
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Edge Packer Output"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCLOSE,5,190,50,14
+    EDITTEXT        IDC_PACKSTATUS,6,5,255,180,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_YESNOALL DIALOG DISCARDABLE  0, 0, 227, 47
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Yes",IDYES,5,25,50,14
+    DEFPUSHBUTTON   "&No",IDNO,60,25,50,14
+    LTEXT           "Text",IDC_CUSTOMTEXT,5,5,215,20
+    PUSHBUTTON      "Yes to &all",IDYESALL,115,25,50,14
+    PUSHBUTTON      "No to a&ll",IDNOALL,170,25,55,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 409
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+
+    IDD_SELECTVENDOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_ADDVENDOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_CHANGEVENDOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 114
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_CONSOLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_YESNOALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COLUMN1             "ID"
+    IDS_COLUMN2             "Name"
+    IDS_COLUMN3             "Original Size"
+    IDS_COLUMN4             "Packed Size"
+    IDS_COLUMN5             "Compression"
+    IDS_COLUMN6             "Ratio"
+    IDS_COLUMN7             "Modified"
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

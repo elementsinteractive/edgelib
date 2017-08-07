@@ -1,0 +1,41 @@
+TARGET        helloworld.app
+TARGETTYPE    app
+TARGETPATH    \system\apps\helloworld
+UID           0x100039CE 0x10205D9E
+
+MACRO         SERIES80
+MACRO         APP_UID=0x10205D9E
+
+SOURCEPATH    .
+SOURCE        ..\code\helloworld.cpp
+RESOURCE      helloworld.rss
+
+USERINCLUDE   .
+USERINCLUDE   ..\code
+USERINCLUDE   ..\..\..\include
+
+STATICLIBRARY edge.lib
+STATICLIBRARY edgerender.lib
+STATICLIBRARY zlib.lib
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\libc
+
+LIBRARY       edll.lib 
+LIBRARY       edllstub.lib 
+LIBRARY       euser.lib
+LIBRARY       apparc.lib
+LIBRARY       cone.lib
+LIBRARY       eikcore.lib
+LIBRARY       eikcoctl.lib
+LIBRARY       ws32.lib    
+LIBRARY       efsrv.lib
+LIBRARY       etel.lib
+LIBRARY       apgrfx.lib
+LIBRARY       estlib.lib
+LIBRARY       fbscli.lib
+LIBRARY       bitgdi.lib
+LIBRARY	      esock.lib
+LIBRARY	      insock.lib
+LIBRARY	      hal.lib
+LIBRARY       plpvariant.lib

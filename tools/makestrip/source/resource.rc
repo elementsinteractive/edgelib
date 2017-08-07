@@ -1,0 +1,184 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOG DISCARDABLE  0, 0, 142, 81
+STYLE DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "EDGELIB Strip Maker"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Quit",IDDONE,75,60,60,14
+    CONTROL         "Magenta background (#FF00FF)",IDC_MAGENTA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,115,10
+    CONTROL         "Square images",IDC_SQUARE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,15,115,10
+    DEFPUSHBUTTON   "Open && Process",IDPROCESS,5,60,60,14
+    CONTROL         "Vertical build",IDC_VERTICAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,25,115,10
+    CONTROL         "Include alpha channel",IDC_ALPHA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,35,115,10
+    CONTROL         "Check unused pixels",IDC_UNUSEDPIX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,45,115,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 135
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON    DISCARDABLE     "res\\main.ico"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041304b0"
+        BEGIN
+            VALUE "Comments", "Turn several animation images into 1 with ease!\0"
+            VALUE "CompanyName", "Elements Interactive\0"
+            VALUE "FileDescription", "Image Animation Strip Builder\0"
+            VALUE "FileVersion", "1, 0, 0, 0\0"
+            VALUE "InternalName", "makestrip\0"
+            VALUE "LegalCopyright", "Copyright © 2005, Elements Interactive B.V.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "makestrip.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Image Animation Strip Builder\0"
+            VALUE "ProductVersion", "1, 0, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x413, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open && Process...",         ID_FILE_OPENENPROCESS
+        MENUITEM "&Quit",                       ID_FILE_QUIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&EDGELIB website",            ID_HELP_EDGELIBWEBSITE
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

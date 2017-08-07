@@ -1,0 +1,37 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "animate3d"
+caption      = "Animate 3D"
+target type  = "bin"
+appuid       = "0x10205da3"
+version      = "1.00.0"
+capabilities = "None"
+selplatform  = "Series 60 (3rd edition),UIQ (3.0)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\animate3d.cpp"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 1
+resourcepath = "Install"
+	resourcefile = "..\res\background.jpg"
+	resourcefile = "..\res\turtle.png"
+	resourcefile = "..\res\turtle.ms3d"
+	resourcefile = "..\res\block.png"
+endpath = 0
+
+# Project environment
+incpath = "."
+pluginlib = "opengl\plugin1-0.lib"
+dynamiclib = "%sdkpath%\Epoc32\Release\armv5\lib\libgles_cm.dso"
+macrodef = "EGL_SYMBIAN"

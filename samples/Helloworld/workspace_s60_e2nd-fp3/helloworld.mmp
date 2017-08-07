@@ -1,0 +1,50 @@
+TARGET        helloworld.app
+TARGETTYPE    app
+TARGETPATH    \system\apps\helloworld
+UID           0x100039CE 0x10205D9E
+
+MACRO         SERIES60
+MACRO         APP_UID=0x10205D9E
+
+SOURCEPATH    .
+SOURCE        ..\code\helloworld.cpp
+RESOURCE      helloworld.rss
+
+USERINCLUDE   .
+USERINCLUDE   ..\code
+USERINCLUDE   ..\..\..\include
+
+SYSTEMINCLUDE \epoc32\include
+SYSTEMINCLUDE \epoc32\include\libc
+
+STATICLIBRARY edge.lib
+STATICLIBRARY edgerender.lib
+STATICLIBRARY zlib.lib
+
+LIBRARY       edll.lib 
+LIBRARY       edllstub.lib 
+LIBRARY       euser.lib
+LIBRARY       apparc.lib
+LIBRARY       cone.lib
+LIBRARY       eikcore.lib
+LIBRARY       eikcoctl.lib
+LIBRARY       avkon.lib
+LIBRARY       ws32.lib    
+LIBRARY       efsrv.lib
+LIBRARY       etel.lib
+LIBRARY       apgrfx.lib
+LIBRARY       estlib.lib
+LIBRARY       plpvariant.lib
+LIBRARY       fbscli.lib
+LIBRARY       bitgdi.lib
+LIBRARY	      esock.lib
+LIBRARY	      insock.lib
+LIBRARY	      bluetooth.lib
+LIBRARY       btextnotifiers.lib
+LIBRARY       btmanclient.lib
+LIBRARY       sdpagent.lib
+LIBRARY       sdpdatabase.lib
+LIBRARY       hal.lib
+LIBRARY       etel3rdparty.lib
+
+AIF helloworld.aif ..\res\aif aif.rss c12 icon20.bmp icon20mask.bmp icon24.bmp icon24mask.bmp icon32.bmp icon32mask.bmp icon48.bmp icon48mask.bmp

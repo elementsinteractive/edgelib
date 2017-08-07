@@ -1,0 +1,37 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "connect"
+caption      = "Connect"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+domain       = "nl.edgelib.samples.connect"
+target type  = "bin"
+appuid       = "0x10205da2"
+version      = "1.00.0"
+capabilities = "LocalServices+NetworkServices"
+fwdependencies = "None"
+selplatform  = "None"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\connect.cpp"
+
+headerfile = "..\code\main.h"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 0
+resourcepath = "Install"
+	resourcefile = "..\res\font_fixed.bmp"
+endpath = 0
+
+# Project environment
+incpath = "."

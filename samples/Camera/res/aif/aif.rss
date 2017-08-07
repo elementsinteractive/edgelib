@@ -1,0 +1,11 @@
+#include <aiftool.rh>
+
+RESOURCE AIF_DATA
+{
+	app_uid = 0x10205D9E;
+	caption_list=
+	{
+		CAPTION { code = ELangOther; caption = "Hello World"; }
+	};
+	num_icons = 4;
+}

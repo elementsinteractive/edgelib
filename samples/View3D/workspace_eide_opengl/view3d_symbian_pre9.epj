@@ -1,0 +1,41 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "view3d"
+caption      = "View 3D"
+target type  = "bin"
+appuid       = "0x10205d9f"
+version      = "1.00.0"
+capabilities = "None"
+selplatform  = "Series 60 (1st edition),Series 80 (1st edition),Series 80 (2nd edition),Series 90 (Nokia 7710)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\view3d.cpp"
+
+headerfile = "..\code\main.h"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\ico48_64.bmp"
+	resourcefile = "..\res\icons\ico48.bmp"
+	resourcefile = "..\res\icons\ico32.bmp"
+	resourcefile = "..\res\icons\ico24.bmp"
+	resourcefile = "..\res\icons\ico20.bmp"
+	resourcefile = "..\res\icons\ico16.bmp"
+endpath = 1
+resourcepath = "Install"
+	resourcefile = "..\res\edgelogo.3ds"
+	resourcefile = "..\res\texture.png"
+	resourcefile = "..\..\..\..\rasteroid3.1\bin\series60\armi\urel\libGLES_CM_NoE.dll"
+	resourcefile = "..\..\..\..\rasteroid3.1\bin\series60\armi\urel\libEGL.dll"
+endpath = 0
+
+# Project environment
+incpath = "."
+incpath = "..\..\..\..\rasteroid3.1\include"
+pluginlib = "opengl\pluginrasteroid.lib"
+dynamiclib = "..\..\..\..\rasteroid3.1\lib\series60\armi\urel\libEGL.lib"
+dynamiclib = "..\..\..\..\rasteroid3.1\lib\series60\armi\urel\libGLES_CM_NoE.lib"
+macrodef = "EGL_RASTEROID"

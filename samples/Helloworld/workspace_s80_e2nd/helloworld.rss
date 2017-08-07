@@ -1,0 +1,12 @@
+NAME HEWO
+
+#include <eikon.rh>
+#include <eikcore.rsg>
+
+RESOURCE RSS_SIGNATURE { }
+
+RESOURCE TBUF { buf=""; }
+
+RESOURCE EIK_APP_INFO
+{
+}

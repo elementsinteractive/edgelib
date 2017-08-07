@@ -1,0 +1,32 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "edgesaver"
+caption      = "Edge Saver"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+domain       = "nl.edgelib.samples.edgesaver"
+target type  = "bin"
+appuid       = "0x10205da5"
+version      = "1.00.0"
+capabilities = "None"
+fwdependencies = "None"
+selplatform  = "None"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\code\edgesaver.cpp"
+
+resourcepath = "Icons"
+	resourcefile = "..\res\icons\icon64.bmp"
+	resourcefile = "..\res\icons\icon48.bmp"
+	resourcefile = "..\res\icons\icon32.bmp"
+	resourcefile = "..\res\icons\icon24.bmp"
+	resourcefile = "..\res\icons\icon20.bmp"
+	resourcefile = "..\res\icons\icon16.bmp"
+endpath = 1
+
+# Project environment
+incpath = "."

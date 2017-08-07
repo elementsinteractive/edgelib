@@ -1,0 +1,23 @@
+// code/multitouch.cpp
+// One of the EDGELIB samples
+// Demonstrates multitouch to read up to five seperate touches
+//
+// Shows a block for every active touch
+//
+// Copyright (c) 2004-2017 Elements Interactive B.V.
+/////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////
+// Include and link the library                                    //
+/////////////////////////////////////////////////////////////////////
+
+#pragma comment(lib, "edge.lib")
+#include "edgemain.h"             //The Edge SDK
+
+#include "main.h"
+
+/////////////////////////////////////////////////////////////////////
+// The program entry point                                         //
+/////////////////////////////////////////////////////////////////////
+
+ClassEdge *EdgeMain(EDGESTARTUP *data){ return(new ClassMain); }

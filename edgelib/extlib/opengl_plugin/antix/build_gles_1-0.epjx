@@ -1,0 +1,25 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "plugin1-0"
+caption      = "buildgl"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+domain       = ""
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "0.01.1"
+capabilities = "None"
+fwdependencies = "None"
+selplatform  = "Antix Gameplayer"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\wrap_gles.cpp"
+
+# Project environment
+incpath = "..\..\..\extsdk\powervr\Builds\OGLES\Include"
+incpath = "..\..\..\extsdk\powervr\Builds\OGLES\WindowsCE5ARMV4I\Include"
+macrodef = "EGL_POWERVR"

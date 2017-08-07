@@ -1,0 +1,20 @@
+# Edge project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "pluginvincent"
+caption      = "buildgl"
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "0.01.1"
+capabilities = "None"
+selplatform  = "GP2X (devkitgp2x)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\wrap_gles.cpp"
+
+# Project environment
+incpath = "_sdk\vincent\include"
+macrodef = "EGL_VINCENT"

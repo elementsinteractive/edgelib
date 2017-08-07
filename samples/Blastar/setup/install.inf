@@ -1,0 +1,56 @@
+[Version]
+Signature   = "$Windows NT$"
+Provider    = "Edge"
+CESignature = "$Windows CE$"
+
+
+[CEDevice]
+BuildMax    = 0xE0000000
+
+
+[CEStrings]
+AppName     = "Blastar"
+InstallDir  = %CE1%\%AppName%
+
+
+[DefaultInstall]
+CopyFiles   = ExeFiles,ResFiles
+CEShortcuts = Startmenu
+
+
+[SourceDisksNames.ARMPPC]
+1 = ,"ExeFiles",,"..\workspace_eide_320x240\release\WM Pocket PC (2002)"
+2 = ,"ResFiles",,"..\res\graphics\320x240"
+[SourceDisksNames.ARMPPCVGA]
+1 = ,"ExeFiles",,"..\workspace_eide_640x480\release\WM Pocket PC (2003)"
+2 = ,"ResFiles",,"..\res\graphics\640x480"
+[SourceDisksNames.ARMWSP]
+1 = ,"ExeFiles",,"..\workspace_eide_176x220\release\WM Smartphone (2002)"
+2 = ,"ResFiles",,"..\res\graphics\176x220"
+[SourceDisksNames.ARMWSPQVGA]
+1 = ,"ExeFiles",,"..\workspace_eide_320x240\release\WM Smartphone (2003)"
+2 = ,"ResFiles",,"..\res\graphics\320x240"
+
+
+[SourceDisksFiles]
+Blastar.exe = 1
+gfx.epk = 2
+
+
+[DestinationDirs]
+ExeFiles  = 0, %InstallDir%
+ResFiles  = 0, %InstallDir%
+Startmenu = 0, %CE11%\Edge
+DefaultDestDir = 0, %InstallDir%
+
+
+[ExeFiles]
+"Blastar.exe"
+
+
+[ResFiles]
+"gfx.epk"
+
+
+[Startmenu]
+"Blastar", 0, "Blastar.exe"

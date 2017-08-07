@@ -1,0 +1,376 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAIN DIALOGEX 0, 0, 406, 235
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "EDGELIB Builder"
+MENU IDR_MAINMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tree1",IDC_FILES,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_EDITLABELS | WS_BORDER | WS_TABSTOP,5,20,140,140,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_PLATFORM,5,5,140,85,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_BUILDOUTPUT,5,165,395,65,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_PROJECTPATHS DIALOG  0, 0, 207, 156
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Additional library/include paths"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDCLOSE,150,135,50,14
+    PUSHBUTTON      "Move up",IDMOVEUP,150,20,50,14
+    LISTBOX         IDC_PATHLIST,5,20,135,130,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Move down",IDMOVEDOWN,150,41,50,14
+    PUSHBUTTON      "Change...",IDCHANGE,150,60,50,14
+    PUSHBUTTON      "Add...",IDADD,150,81,50,14
+    PUSHBUTTON      "Remove",IDREMOVE,150,100,50,14
+    COMBOBOX        IDC_PATHTYPE,5,5,135,145,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_EDITPATH DIALOG  0, 0, 172, 41
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit path"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,20,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,20,50,14
+    EDITTEXT        IDC_PATHEDIT,5,5,160,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDBROWSE,115,20,50,14
+END
+
+IDD_PRJPROPERTIES DIALOGEX 0, 0, 282, 218
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Project properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,197,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,197,50,14
+    LTEXT           "Name",IDC_STATIC,6,6,55,10
+    EDITTEXT        IDC_PRJNAME,6,18,70,12,ES_AUTOHSCROLL
+    LTEXT           "UID",IDC_STATIC,7,94,55,10
+    EDITTEXT        IDC_PRJUID,7,105,70,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_TARGETTYPE,7,165,70,85,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Target",IDC_STATIC,7,154,55,10
+    CONTROL         "Disable resolution emulation",IDC_NORESEMU,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,181,105,10
+    LTEXT           "Caption",IDC_STATIC,78,6,55,10
+    EDITTEXT        IDC_PRJCAPTION,78,18,72,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Capabilities",IDCAPABILITIES,220,197,55,14
+    EDITTEXT        IDC_VERMAJOR,83,105,20,12,ES_AUTOHSCROLL
+    LTEXT           "Version",IDC_STATIC,83,94,35,10
+    EDITTEXT        IDC_VERMINOR,103,105,20,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BUILDNR,123,105,30,12,ES_AUTOHSCROLL
+    LTEXT           "Build",IDC_STATIC,123,94,35,10
+    LISTBOX         IDC_SELECTPLATFORM,156,18,120,174,NOT LBS_NOTIFY | LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Selected platforms",IDC_STATIC,156,6,75,10
+    LTEXT           "Vendor",IDC_STATIC,6,36,55,10
+    EDITTEXT        IDC_PRJVENDOR,6,48,70,12,ES_AUTOHSCROLL
+    LTEXT           "Vendor (short)",IDC_STATIC,78,36,55,10
+    EDITTEXT        IDC_PRJVENDORSHORT,78,48,72,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Dependencies",IDDEPENDENCIES,155,197,55,14
+    EDITTEXT        IDC_PRJDOMAIN,6,78,144,12,ES_AUTOHSCROLL
+    LTEXT           "Domain",IDC_STATIC,6,66,25,8
+    CONTROL         "Override EDGELIB installation path:",IDC_CUSTOMPATH,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,126,128,10
+    EDITTEXT        IDC_PATHOVERRIDE,7,138,142,14,ES_AUTOHSCROLL
+END
+
+IDD_CAPABILITIES DIALOG  0, 0, 212, 215
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Symbian 9+ capabilities"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,195,50,14
+    GROUPBOX        "Basic capabilities",IDC_STATIC,5,5,95,95
+    CONTROL         "Local services",IDC_CAPB1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,15,80,10
+    CONTROL         "User environment",IDC_CAPB2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,25,80,10
+    CONTROL         "Network services",IDC_CAPB3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,35,80,10
+    CONTROL         "Location",IDC_CAPA8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,85,80,10
+    CONTROL         "Read user data",IDC_CAPB4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,45,80,10
+    CONTROL         "Write user data",IDC_CAPB5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,55,80,10
+    GROUPBOX        "Extended capabilities",IDC_STATIC,110,5,95,95
+    CONTROL         "Read device data",IDC_CAPA1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,15,80,10
+    CONTROL         "Write device data",IDC_CAPA2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,25,80,10
+    CONTROL         "SWEvent",IDC_CAPA3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,35,80,10
+    CONTROL         "ProtSrv",IDC_CAPA4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,45,80,10
+    CONTROL         "Surroundings DD",IDC_CAPA5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,55,80,10
+    CONTROL         "Trusted UI",IDC_CAPA6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,65,80,10
+    CONTROL         "Power Management",IDC_CAPA7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,115,75,80,10
+    GROUPBOX        "Phone manufacturer approved",IDC_STATIC,5,105,200,85
+    CONTROL         "DRM",IDC_CAPM1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,116,80,10
+    CONTROL         "Multimedia DD",IDC_CAPM2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,126,80,10
+    CONTROL         "Network control",IDC_CAPM3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,135,80,10
+    CONTROL         "TCB",IDC_CAPM4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,145,80,10
+    CONTROL         "All files",IDC_CAPM5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,156,80,10
+    CONTROL         "Comm DD",IDC_CAPM6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,166,80,10
+    CONTROL         "Disk admin",IDC_CAPM7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,175,80,10
+END
+
+IDD_OPTIONS DIALOG  0, 0, 137, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "EDGELIB Builder options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,185,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,185,50,14
+    EDITTEXT        IDC_EDGEPATH,10,15,115,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse..",IDBROWSE,10,30,50,14
+    GROUPBOX        "Project defaults",IDC_STATIC,5,55,125,65
+    GROUPBOX        "EDGELIB installation path",IDC_STATIC,5,5,125,45
+    LTEXT           "Vendor",IDC_STATIC,10,65,60,10
+    EDITTEXT        IDC_VENDOR,10,74,115,12,ES_AUTOHSCROLL
+    LTEXT           "Vendor (short)",IDC_STATIC,10,89,60,10
+    EDITTEXT        IDC_VENDORSHORT,10,100,115,12,ES_AUTOHSCROLL
+    GROUPBOX        "Other settings",IDC_STATIC,5,124,125,51
+    EDITTEXT        IDC_TMPFILE,10,145,115,12,ES_AUTOHSCROLL
+    LTEXT           "Temp file",IDC_STATIC,10,135,60,10
+    CONTROL         "Build commands to batch file",IDC_BUILDBATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,10,160,106,10
+END
+
+IDD_DEPENDENCIES DIALOG  0, 0, 117, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Antix dependencies"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,5,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,60,70,50,14
+    CONTROL         "AGP",IDC_DEPSTD1,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,5,5,80,10
+    CONTROL         "OpenKode",IDC_DEPSTD2,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,5,15,80,10
+    CONTROL         "EGL",IDC_DEPSTD3,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,5,25,80,10
+    CONTROL         "OpenGL ES",IDC_DEP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,35,80,10
+    CONTROL         "AGP Audio",IDC_DEP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,45,80,10
+    CONTROL         "OGG Vorbis",IDC_DEP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,55,80,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 399
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+
+    IDD_PROJECTPATHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_EDITPATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_PRJPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_CAPABILITIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_DEPENDENCIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New project",                ID_FILE_NEWPROJECT
+        MENUITEM "&Open project...",            ID_FILE_OPENPROJECT
+        MENUITEM "&Save project",               ID_FILE_SAVEPROJECT
+        MENUITEM "&Revert project",             ID_FILE_REVERTPROJECT
+        MENUITEM "&Close project",              ID_FILE_CLOSEPROJECT
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_FILE_EXITPROGRAM
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "Library/include &paths...",   ID_PROJECT_PATHS
+        MENUITEM "P&roperties...",              ID_PROJECT_PROPERTIES
+    END
+    POPUP "&Build"
+    BEGIN
+        MENUITEM "&Compile",                    ID_BUILD_COMPILE
+        MENUITEM "&Link",                       ID_BUILD_LINK
+        MENUITEM SEPARATOR
+        MENUITEM "&Build",                      ID_BUILD_BUILD
+        MENUITEM "&Rebuild all",                ID_BUILD_REBUILDALL
+        MENUITEM "Build &setup",                ID_BUILD_BUILDSETUP
+        MENUITEM "S&top build",                 ID_BUILD_STOPBUILD
+        MENUITEM SEPARATOR
+        MENUITEM "E&xecute",                    ID_BUILD_EXECUTE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&EDGELIB website",            ID_HELP_WEBSITE
+        MENUITEM "&About",                      ID_HELP_ABOUT
+    END
+END
+
+IDR_POPUPMENU MENU 
+BEGIN
+    POPUP "Tree&folder"
+    BEGIN
+        MENUITEM "&New folder",                 ID_TREEFOLDER_NEWFOLDER
+        MENUITEM "Add &files to folder",        ID_TREEFOLDER_ADDFILES
+        MENUITEM "&Remove",                     ID_TREEFOLDER_REMOVE
+    END
+    POPUP "T&reefolder&root"
+    BEGIN
+        MENUITEM "&New folder",                 ID_TREEFOLDERROOT_NEWFOLDER
+        MENUITEM "Add &files to folder",        ID_TREEFOLDERROOT_ADDFILES
+    END
+    POPUP "&Treefile"
+    BEGIN
+        MENUITEM "&Remove",                     ID_TREEFILE_REMOVE
+    END
+    POPUP "&Project"
+    BEGIN
+        MENUITEM "&Properties...",              ID_PROJECT_PROPERTIES
+        MENUITEM "&Rebuild",                    ID_BUILD_REBUILDALL
+    END
+    POPUP "&Iconfolder"
+    BEGIN
+        MENUITEM "Add &icons",                  ID_ICONFOLDER_ADDICONS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FOLDEROPEN          BITMAP                  "res\\folderopen.bmp"
+IDB_FOLDERCLOSE         BITMAP                  "res\\folderclose.bmp"
+IDB_SOURCEFILE          BITMAP                  "res\\sourcefile.bmp"
+IDB_HEADERFILE          BITMAP                  "res\\headerfile.bmp"
+IDB_PROJECT             BITMAP                  "res\\project.bmp"
+IDB_FOLDERROOT          BITMAP                  "res\\folderroot.bmp"
+IDB_RESOURCEROOT        BITMAP                  "res\\resourceroot.bmp"
+IDB_RESFOLDERCLOSE      BITMAP                  "res\\resfolderclose.bmp"
+IDB_RESFOLDEROPEN       BITMAP                  "res\\resfolderopen.bmp"
+IDB_RESOURCEFILE        BITMAP                  "res\\resourcefile.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "res\\main.ico"
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

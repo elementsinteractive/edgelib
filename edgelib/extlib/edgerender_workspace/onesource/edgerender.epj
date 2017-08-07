@@ -1,0 +1,22 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "edgerender"
+caption      = "edgerender"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "1.00.0"
+capabilities = "None"
+selplatform  = "Windows desktop (vc 2005),Windows desktop (vc 6.0),WM Pocket PC (2002),WM Pocket PC (2003),WM Pocket PC (2005)"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "edgerender.cpp"
+
+# Project environment
+incpath = "."
+incpath = "../../edgerender_generate"

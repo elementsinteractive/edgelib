@@ -1,0 +1,23 @@
+# EDGELIB project file (edit at your own risk)
+# Copyright (c) 2004-2017 Elements Interactive B.V.
+# -----------------------------------------
+
+# General project properties
+projectname  = "plugingl1-0"
+caption      = "buildgl"
+vendor       = "Elements Interactive B.V."
+vendorshort  = "EI"
+target type  = "lib"
+appuid       = "0x10205d9d"
+version      = "0.01.1"
+capabilities = "None"
+fwdependencies = "None"
+selplatform  = "Android"
+noresemu     = "1"
+
+# Project source, header and resource tree
+sourcefile = "..\wrap_glesandroid.cpp"
+
+# Project environment
+incpath = "_sdk\vincent\include"
+macrodef = "EGL_VINCENT"
